@@ -23,3 +23,13 @@ function disemvowel(str) {
   return str.split("").filter(v=>arr.indexOf(v) == -1).join("");
 }
 ```
+# Education
+- Belarusian National Technical University
+    - Mechanical Engineering
+- IT ACADEMY
+    - WEBSITE DEVELOPMENT WITH HTML,  CSS & JAVASCRIPT
+    - Development of web applications with JavaScript
+    - Web application development using react
+     
+# Languages
+-B1
