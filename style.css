@@ -233,6 +233,10 @@ header {
 }
 
 /* Code example */
+.wrapper-code {
+  font-size: 14px;
+}
+
 .code-example {
   width: 100%;
   margin-bottom: 34px;
