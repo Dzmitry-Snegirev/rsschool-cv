@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("/shelter/assets/fonts/georgia/georgia-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("/shelter/assets/fonts/georgia/georgia-italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("/shelter/assets/fonts/georgia/georgia-bold-italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 40px 0px 40px;
+  height: 100%;
+  font-family: "Georgia", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: black;
+}
+
+.page-body {
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
