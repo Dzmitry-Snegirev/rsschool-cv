@@ -19,6 +19,53 @@
   font-weight: normal;
 }
 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -26,17 +73,73 @@ html {
 .page {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0px 40px 0px 40px;
   height: 100%;
-  font-family: "Georgia", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: black;
+  font-family: "Georgia Regular", Arial, sans-serif;
 }
 
 .page-body {
-  min-height: 100%;
   margin: 0 auto;
+}
+
+.page-body a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.page-body a:hover,
+.page-body a:focus {
+  text-decoration: none;
+}
+
+.page-body a:active {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+}
+
+.wrapper {
+  background: url(/shelter/assets/image/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  padding: 30px 40px;
+}
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+.nav-title {
+  color: #f1cdb3;
+  font-weight: 400;
+  font-size: 32px;
+  padding-bottom: 10px;
+  letter-spacing: 0.06em;
+}
+
+.nav-subtitle {
+  color: #cdcdcd;
+  font-size: 13px;
+  font-family: Arial;
+  letter-spacing: 0.1em;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.nav a {
+  padding: 14px 10px;
+  line-height: 50px;
+  color: #cdcdcd;
+  font-weight: 400;
 }
