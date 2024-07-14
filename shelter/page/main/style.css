@@ -47,6 +47,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-weight: 400;
 }
 
 body {
@@ -89,7 +90,6 @@ button:hover {
   margin: 0 auto;
   height: 100%;
   font-family: "Georgia Regular", Arial, sans-serif;
-  font-weight: 400;
 }
 
 .page-body {
@@ -106,7 +106,7 @@ button:hover {
   text-decoration: none;
 }
 
-.page-body a:active {
+.nav__item a:active {
   border-bottom: 3px solid #F1CDB3;
   text-decoration: none;
 }
@@ -123,6 +123,10 @@ header {
   justify-content: space-between;
   margin-bottom: 90px;
   column-gap: 42px;
+}
+
+.header-logo :active {
+  border: none;
 }
 
 .nav-title {
@@ -143,37 +147,56 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
-  padding: 0;
+  padding-right: 3px;
   list-style: none;
 }
 
-.nav a {
-  padding: 14px 10px;
-  line-height: 50px;
-  color: #cdcdcd;
+.nav__item {
+  padding: 17px 35px 16px 0px;
+  line-height: 34px;
+  font-size: 15px;
   font-weight: 400;
+}
+
+.nav__item a {
+  color: #cdcdcd;
+}
+
+.nav__item:last-child {
+  padding-right: 0;
 }
 
 /* Main */
 
 /* Not only */
 
-.not-only,
-.about {
+.not-only {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+
+.not-only {
+  line-height: 60px;
 }
 
 .not-only__content {
   width: 460px;
 }
 
+.not-only__content {
+  padding-top: 157px;
+}
+
 .not-only__title {
-  padding-top: 163px;
   font-size: 44px;
   text-align: left;
   margin-bottom: 42px;
   color: #fff;
+}
+
+.title-mod {
+  display: block;
 }
 
 .not-only__text {
@@ -182,7 +205,7 @@ header {
   line-height: 24px;
   text-align: left;
   color: #CDCDCD;
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 }
 
 .photo {
@@ -192,19 +215,39 @@ header {
 
 .button-primery {
   font-size: 17px;
+  letter-spacing: 1px;
 }
 
 /* About */
 .about {
   padding: 40px 80px 100px;
   column-gap: 120px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .about__content {
   width: 430px;
+  padding-top: 50px;
+}
+
+.about__pets {
+  padding-top: 38px;
+  padding-left: 135px;
+}
+
+.about__title {
+  color: #545454;
+  font-size: 35px;
+  line-height: 48px;
+  letter-spacing: 2px;
 }
 
 .about__title,
 .mod {
-  padding-bottom: 25px;
+  padding-bottom: 26px;
+}
+
+.about__text {
+  font-size: 15px;
 }
