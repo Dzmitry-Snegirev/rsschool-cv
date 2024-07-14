@@ -158,7 +158,8 @@ header {
 
 /* Not only */
 
-.not-only {
+.not-only,
+.about {
   display: flex;
   justify-content: space-around;
 }
@@ -185,9 +186,25 @@ header {
 }
 
 .photo {
-  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 .button-primery {
   font-size: 17px;
+}
+
+/* About */
+.about {
+  padding: 40px 80px 100px;
+  column-gap: 120px;
+}
+
+.about__content {
+  width: 430px;
+}
+
+.about__title,
+.mod {
+  padding-bottom: 25px;
 }
