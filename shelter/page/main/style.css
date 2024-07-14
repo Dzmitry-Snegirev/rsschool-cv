@@ -70,11 +70,26 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  background: #F1CDB3;
+  border-radius: 100px;
+  width: 207px;
+  height: 52px;
+  padding: 15px 45px 15px 45px;
+  border: none;
+  font-family: "Georgia Regular", Arial, sans-serif;
+}
+
+button:hover {
+  background: #FDDCC4;
+}
+
 .page {
   max-width: 1280px;
   margin: 0 auto;
   height: 100%;
   font-family: "Georgia Regular", Arial, sans-serif;
+  font-weight: 400;
 }
 
 .page-body {
@@ -86,38 +101,33 @@ html {
   color: black;
 }
 
-
 .page-body a:hover,
 .page-body a:focus {
   text-decoration: none;
 }
 
 .page-body a:active {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: underline;
+  border-bottom: 3px solid #F1CDB3;
+  text-decoration: none;
 }
 
 .wrapper {
   background: url(/shelter/assets/image/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-  padding: 30px 40px;
+  padding: 30px 40px 0;
+  background-size: cover;
 }
-
 
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 90px;
+  column-gap: 42px;
 }
-
-
-
-
 
 .nav-title {
   color: #f1cdb3;
-  font-weight: 400;
   font-size: 32px;
-  padding-bottom: 10px;
   letter-spacing: 0.06em;
 }
 
@@ -142,4 +152,42 @@ header {
   line-height: 50px;
   color: #cdcdcd;
   font-weight: 400;
+}
+
+/* Main */
+
+/* Not only */
+
+.not-only {
+  display: flex;
+  justify-content: space-around;
+}
+
+.not-only__content {
+  width: 460px;
+}
+
+.not-only__title {
+  padding-top: 163px;
+  font-size: 44px;
+  text-align: left;
+  margin-bottom: 42px;
+  color: #fff;
+}
+
+.not-only__text {
+  font-family: Arial;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  color: #CDCDCD;
+  margin-bottom: 42px;
+}
+
+.photo {
+  object-fit: contain;
+}
+
+.button-primery {
+  font-size: 17px;
 }

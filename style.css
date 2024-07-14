@@ -31,8 +31,8 @@ html {
 }
 
 .page-body a:active {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: underline;
+  border-bottom: 3px solid;
+  color: #F1CDB3;
 }
 
 .container {
