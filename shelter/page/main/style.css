@@ -72,6 +72,7 @@ html {
 }
 
 button {
+  display: block;
   background: #F1CDB3;
   border-radius: 100px;
   width: 207px;
@@ -220,34 +221,85 @@ header {
 
 /* About */
 .about {
-  padding: 40px 80px 100px;
+  padding: 40px 80px 147px;
   column-gap: 120px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .about__content {
-  width: 430px;
+  width: 428px;
   padding-top: 50px;
 }
 
 .about__pets {
   padding-top: 38px;
-  padding-left: 135px;
 }
 
-.about__title {
+.main__title {
   color: #545454;
   font-size: 35px;
   line-height: 48px;
   letter-spacing: 2px;
 }
 
-.about__title,
+.main__title,
 .mod {
   padding-bottom: 26px;
 }
 
 .about__text {
   font-size: 15px;
+}
+
+.pets {
+  object-fit: contain;
+}
+
+/* our-friends */
+
+.our-friends__title {
+  text-align: center;
+  padding-top: 29px;
+}
+
+.slider-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  margin: 31px 98px;
+}
+
+.slider-item {
+  margin: 0 auto;
+  width: 270px;
+}
+
+.slider-title {
+  color: #545454;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.slider-button {
+  width: 187px;
+  height: 52px;
+  padding: 15px 45px 15px 45px;
+  border-radius: 100px;
+  border: solid 2px #F1CDB3;
+  margin: 0 auto;
+}
+
+.svg-arow {
+  position: absolute;
+}
+
+.mod-left {
+  top: 50%;
+}
+
+.mod-right {
+  top: 50%;
+  right: 0;
 }
