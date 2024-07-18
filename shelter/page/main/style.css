@@ -37,6 +37,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 ul,
 ol,
@@ -84,6 +85,7 @@ button {
 
 button:hover {
   background: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 .page {
@@ -153,7 +155,7 @@ header {
 }
 
 .nav__item {
-  padding: 17px 35px 16px 0px;
+  padding: 15px 35px 16px 0px;
   line-height: 34px;
   font-size: 15px;
   font-weight: 400;
@@ -192,7 +194,7 @@ header {
 .not-only__title {
   font-size: 44px;
   text-align: left;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
   color: #fff;
 }
 
@@ -206,7 +208,7 @@ header {
   line-height: 24px;
   text-align: left;
   color: #CDCDCD;
-  margin-bottom: 37px;
+  margin-bottom: 41px;
 }
 
 .photo {
@@ -221,7 +223,7 @@ header {
 
 /* About */
 .about {
-  padding: 40px 80px 147px;
+  padding: 37px 0 75px;
   column-gap: 120px;
   display: flex;
   justify-content: center;
@@ -236,7 +238,8 @@ header {
   padding-top: 38px;
 }
 
-.main__title {
+.main__title,
+.help__title {
   color: #545454;
   font-size: 35px;
   line-height: 48px;
@@ -245,11 +248,12 @@ header {
 
 .main__title,
 .mod {
-  padding-bottom: 26px;
+  padding-bottom: 23px;
 }
 
 .about__text {
   font-size: 15px;
+  line-height: 24px;
 }
 
 .pets {
@@ -257,6 +261,11 @@ header {
 }
 
 /* our-friends */
+
+.our-friends {
+  position: relative;
+  margin-bottom: 180px;
+}
 
 .our-friends__title {
   text-align: center;
@@ -266,8 +275,7 @@ header {
 .slider-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  position: relative;
-  margin: 31px 98px;
+  margin: 31px 98px 92px;
 }
 
 .slider-item {
@@ -279,27 +287,189 @@ header {
   color: #545454;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  font-size: 20px;
 }
 
 .slider-button {
   width: 187px;
   height: 52px;
-  padding: 15px 45px 15px 45px;
+  padding: 13px 45px 15px 42px;
   border-radius: 100px;
+  background: #F6F6F6;
   border: solid 2px #F1CDB3;
   margin: 0 auto;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  line-height: 30.5px;
 }
 
-.svg-arow {
+.arow-wrap {
   position: absolute;
+  width: 52px;
+  height: 52px;
+  padding: 23px 19px 23px 19px;
+  border-radius: 100px;
+  border: 2px solid #F1CDB3;
+  background-color: #fff;
+  top: 51.5%;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.arow {
+  position: absolute;
+  top: 46%;
+  left: 32%;
+}
+
+.rigth {
+  right: 0;
+}
+
+.arow-wrap:hover {
+  background: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 .mod-left {
-  top: 50%;
+  left: 3%;
+  top: 64%;
 }
 
 .mod-right {
-  top: 50%;
-  right: 0;
+  right: 3%;
+  top: 64%;
+}
+
+.slider-tab {
+  width: 261px;
+  height: 52px;
+  padding: 15px 45px 15px 45px;
+  border-radius: 100px;
+  margin: 0 auto;
+  color: #292929;
+  font-size: 17px;
+  margin-bottom: 100px;
+  line-height: 22.1px;
+  letter-spacing: 0.05em;
+}
+
+/*Help*/
+
+.help__title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.list-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  margin: 0 127px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.list-item:nth-child(1) {
+  margin-right: 122px;
+}
+
+.list-item:nth-child(2) {
+  margin-right: 61px;
+}
+
+.list-item:nth-child(3) {
+  margin-right: 22px;
+}
+
+.list-item:nth-child(4) {
+  margin-left: 22px;
+}
+
+.list-item:nth-child(5) {
+  margin-left: 104px;
+}
+
+.list-item:nth-child(6) {
+  margin-left: 53px;
+}
+
+.list-item:nth-child(7) {
+  margin-left: 72px;
+}
+
+.list-item:nth-child(8) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  margin-right: 36px;
+  grid-row: 2;
+}
+
+.list-item:last-child {
+  margin-left: 100px;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+}
+
+
+.list-tile {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+
+/*donation*/
+.donation {
+  display: flex;
+  gap: 30px;
+  margin: 125px 183px;
+}
+
+.donation__content {
+  width: 380px;
+}
+
+.donation__title {
+  color: #545454;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.donation-subtitle {
+  font-size: 15px;
+  line-height: 16.5px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.donation-card {
+  background: #F1CDB3;
+  width: 349px;
+  height: 43px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 9px;
+}
+
+.donation-text {
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+  text-align: left;
+  color: #B2B2B2;
+  padding-top: 20px;
 }
