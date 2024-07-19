@@ -86,6 +86,7 @@ button {
 button:hover {
   background: #FDDCC4;
   border-color: #FDDCC4;
+  transition: 0.5s;
 }
 
 .page {
@@ -101,7 +102,6 @@ button:hover {
 
 .page-body a {
   text-decoration: none;
-  color: black;
 }
 
 .page-body a:hover,
@@ -109,10 +109,7 @@ button:hover {
   text-decoration: none;
 }
 
-.nav__item a:active {
-  border-bottom: 3px solid #F1CDB3;
-  text-decoration: none;
-}
+
 
 .wrapper {
   background: url(/shelter/assets/image/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
@@ -156,12 +153,28 @@ header {
 
 .nav__item {
   padding: 15px 35px 16px 0px;
-  line-height: 34px;
+  line-height: 29px;
   font-size: 15px;
   font-weight: 400;
 }
 
 .nav__item a {
+  color: #cdcdcd;
+  display: block;
+}
+
+.nav__item a:not(.active):hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.active {
+  border-bottom: 3px solid #F1CDB3;
+  color: #cdcdcd;
+  cursor: default;
+}
+
+.active:hover {
   color: #cdcdcd;
 }
 
@@ -279,9 +292,23 @@ header {
 }
 
 .slider-item {
+  display: block;
   margin: 0 auto;
   width: 270px;
 }
+
+.slider-item:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 35px 14px #0D0D0D0A;
+}
+
+.slider-item:hover>.slider-button {
+  background: #FDDCC4;
+  border-color: #FDDCC4;
+  transition: 0.5s;
+}
+
+
 
 .slider-title {
   color: #545454;
@@ -294,7 +321,7 @@ header {
 .slider-button {
   width: 187px;
   height: 52px;
-  padding: 13px 45px 15px 42px;
+  padding: 10px 45px 15px 42px;
   border-radius: 100px;
   background: #F6F6F6;
   border: solid 2px #F1CDB3;
@@ -330,6 +357,7 @@ header {
 .arow-wrap:hover {
   background: #FDDCC4;
   border-color: #FDDCC4;
+  transition: 0.5s;
 }
 
 .mod-left {
@@ -464,6 +492,30 @@ header {
   border-radius: 9px;
 }
 
+.card-icon {
+  position: relative;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #545454;
+  padding-left: 44px;
+}
+
+.card-icon::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 32px;
+  background-image: url(/shelter/assets/icons/credit-card.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+
 .donation-text {
   font-family: Arial;
   font-size: 12px;
@@ -472,4 +524,98 @@ header {
   text-align: left;
   color: #B2B2B2;
   padding-top: 20px;
+}
+
+/*footer*/
+
+footer {
+  padding: 14px 40px;
+  background: url(/shelter/assets/image/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background-size: cover;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title,
+.locations__title {
+  color: #fff;
+  margin-bottom: 17px;
+  line-height: 45.5px;
+}
+
+.locations__title {
+  margin-bottom: 6px;
+}
+
+.foot-mail,
+.foot-phone {
+  display: block;
+  padding-top: 5px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #F1CDB3;
+  line-height: 23px;
+  padding-left: 60px;
+  padding-bottom: 4px;
+}
+
+.foot-mail::before,
+.foot-phone::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 32px;
+  background-image: url(/shelter/assets/icons/icon-email.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.foot-phone {
+  display: block;
+  margin-top: 40px;
+}
+
+.foot-phone::before {
+  background-image: url(/shelter/assets/icons/Phone.svg);
+}
+
+.market {
+  margin-top: 0;
+  padding-left: 41px;
+  margin-bottom: 28px;
+}
+
+.market::before,
+.street::before {
+  background-image: url(/shelter/assets/icons/icon-marker.svg);
+  top: 11px;
+}
+
+.street {
+  margin-top: 0;
+  padding-left: 41px;
+}
+
+.street::before {
+  top: 0;
+}
+
+.contacts,
+.locations {
+  padding-top: 16px;
+}
+
+.contacts {
+  width: 280px;
+}
+
+.locations {
+  width: 302px;
 }
