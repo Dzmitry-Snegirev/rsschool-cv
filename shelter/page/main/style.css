@@ -234,6 +234,10 @@ header {
   letter-spacing: 1px;
 }
 
+.button-primery a {
+  color: #292929;
+}
+
 /* About */
 .about {
   padding: 37px 0 75px;
