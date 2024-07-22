@@ -72,9 +72,13 @@ html {
   scroll-behavior: smooth;
 }
 
-.page {
+header,
+main {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.page {
   height: 100%;
   font-family: "Georgia Regular", Arial, sans-serif;
   color: #545454;
@@ -92,6 +96,7 @@ html {
 .page-body a:focus {
   text-decoration: none;
 }
+
 
 /* Header */
 header {
@@ -153,6 +158,8 @@ header {
   padding-right: 0;
 }
 
+
+/*main*/
 
 /* our-friends */
 
@@ -259,8 +266,13 @@ header {
   border-radius: 100px;
   border: solid 2px;
   border-color: #CDCDCD;
-  padding: 12px 20px;
-  color: #CDCDCD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination a path {
+  fill: #CDCDCD;
 }
 
 .pagination a.active {
@@ -269,8 +281,18 @@ header {
   border: 1px solid #F1CDB3;
 }
 
+
+
+.pagination a:hover:not(.active) path {
+  fill: #000;
+}
+
 .pagination a:hover:not(.active) {
-  background-color: #ddd;
+  border-color: #F1CDB3;
+}
+
+.arow-pagination:hover {
+  fill: #000;
 }
 
 /*footer*/
