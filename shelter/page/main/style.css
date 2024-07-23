@@ -72,16 +72,7 @@ html {
   scroll-behavior: smooth;
 }
 
-button {
-  display: block;
-  background: #F1CDB3;
-  border-radius: 100px;
-  width: 207px;
-  height: 52px;
-  padding: 15px 45px 15px 45px;
-  border: none;
-  font-family: "Georgia Regular", Arial, sans-serif;
-}
+
 
 button:hover {
   background: #FDDCC4;
@@ -109,7 +100,7 @@ button:hover {
 
 
 .fon-wraper {
-  background: url(/shelter/assets/image/start-screen-gradient-background.jpg),
+  background: url(/shelter/assets/img/start-screen-gradient-background.jpg),
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
 }
@@ -237,14 +228,20 @@ main {
   width: 100%;
 }
 
+
 .button-primery {
+  background: #F1CDB3;
+  border-radius: 100px;
+  width: 207px;
+  height: 52px;
+  padding: 15px 45px 15px 45px;
+  font-family: "Georgia Regular", Arial, sans-serif;
+  color: #292929;
   font-size: 17px;
   letter-spacing: 1px;
 }
 
-.button-primery a {
-  color: #292929;
-}
+
 
 /* About */
 .about {
@@ -545,7 +542,7 @@ main {
 
 footer {
   padding: 14px 40px;
-  background: url(/shelter/assets/image/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background: url(/shelter/assets/img/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
 }
 
