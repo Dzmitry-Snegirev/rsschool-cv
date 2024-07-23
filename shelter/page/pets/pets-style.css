@@ -114,6 +114,7 @@ header {
 .nav-title {
   font-size: 32px;
   letter-spacing: 0.06em;
+  color: #545454;
 }
 
 .nav-subtitle {
@@ -121,6 +122,8 @@ header {
   font-family: Arial;
   letter-spacing: 0.1em;
   padding-left: 4px;
+  color: #545454;
+  ;
 }
 
 .nav__list {
@@ -293,19 +296,18 @@ header {
   border: 1px solid #F1CDB3;
 }
 
+.no-active {
+  cursor: default;
+}
 
-
-.pagination a:hover:not(.active) path {
+.pagination a:hover:not(.active, .no-active) path {
   fill: #000;
 }
 
-.pagination a:hover:not(.active) {
+.pagination a:hover:not(.active, .no-active) {
   border-color: #F1CDB3;
 }
 
-.arow-pagination:hover {
-  fill: #000;
-}
 
 /*footer*/
 
