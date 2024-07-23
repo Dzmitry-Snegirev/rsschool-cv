@@ -104,6 +104,7 @@ header {
   justify-content: space-between;
   margin-bottom: 90px;
   column-gap: 42px;
+  padding: 0 40px;
 }
 
 .header-logo :active {
@@ -119,6 +120,7 @@ header {
   font-size: 13px;
   font-family: Arial;
   letter-spacing: 0.1em;
+  padding-left: 4px;
 }
 
 .nav__list {
@@ -127,14 +129,17 @@ header {
   justify-content: space-around;
   margin: 0;
   padding-right: 3px;
-  list-style: none;
+  padding-top: 3px;
 }
 
 .nav__item {
-  padding: 15px 35px 16px 0px;
-  line-height: 29px;
+  padding: 20px 35px 16px 0px;
+  font-weight: 400;
+  font-family: Arial;
   font-size: 15px;
   font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
 
 .nav__item a {
@@ -172,25 +177,26 @@ header {
 
 .our-friends {
   position: relative;
-  margin-bottom: 180px;
+  margin-bottom: 128px;
 }
 
 .our-friends__title {
   text-align: center;
-  padding-top: 29px;
+  padding-top: 15px;
 }
 
 .slider-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 31px 40px 75px;
-  gap: 40px;
+  margin: 54px 40px 90px;
+  gap: 57px 40px;
 }
 
 .slider-item {
   display: block;
   width: 270px;
   text-align: center;
+  padding-top: 2px;
 }
 
 .slider-item:hover {
@@ -210,21 +216,24 @@ header {
   color: #545454;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   font-size: 20px;
+  line-height: 22.72px;
+  letter-spacing: 0.06em;
 }
 
 .slider-button {
+  font-family: "Georgia Regular", Arial, sans-serif;
   width: 187px;
   height: 52px;
-  padding: 10px 45px 15px 42px;
+  padding: 12px 40px 15px 42px;
   border-radius: 100px;
   background: #F6F6F6;
   border: solid 2px #F1CDB3;
   margin: 0 auto;
   font-size: 17px;
-  letter-spacing: 0.5px;
-  line-height: 30.5px;
+  line-height: 22.1px;
+  letter-spacing: 0.06em;
 }
 
 .mod-left {
@@ -269,6 +278,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
 }
 
 .pagination a path {
@@ -308,17 +320,18 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding: 0 40px;
 }
 
 .contacts__title,
 .locations__title {
   color: #fff;
-  margin-bottom: 17px;
+  margin-bottom: 38px;
   line-height: 45.5px;
 }
 
 .locations__title {
-  margin-bottom: 6px;
+  margin-bottom: 27px;
 }
 
 .foot-mail,
