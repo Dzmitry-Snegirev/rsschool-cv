@@ -238,12 +238,15 @@ main {
 }
 
 .button-primery {
+  background: #F1CDB3;
+  border-radius: 100px;
+  width: 207px;
+  height: 52px;
+  padding: 15px 45px 15px 45px;
+  font-family: "Georgia Regular", Arial, sans-serif;
+  color: #292929;
   font-size: 17px;
   letter-spacing: 1px;
-}
-
-.button-primery a {
-  color: #292929;
 }
 
 /* About */
