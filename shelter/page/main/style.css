@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Georgia";
-  src: url("/shelter/assets/fonts/georgia/georgia-regular.ttf") format("truetype");
+  src: url("../../assets/fonts/georgia/georgia-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Georgia";
-  src: url("/shelter/assets/fonts/georgia/georgia-italic.ttf") format("truetype");
+  src: url("../../assets/fonts/georgia/georgia-italic.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Georgia";
-  src: url("/shelter/assets/fonts/georgia/georgia-bold-italic.ttf") format("truetype");
+  src: url("../../assets/fonts/georgia/georgia-bold-italic.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -100,7 +100,7 @@ button:hover {
 
 
 .fon-wraper {
-  background: url(/shelter/assets/img/start-screen-gradient-background.jpg),
+  background: url(../../assets/img/start-screen-gradient-background.jpg),
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
 }
@@ -330,11 +330,11 @@ main {
 .slider-button {
   width: 187px;
   height: 52px;
-  padding: 10px 45px 15px 42px;
+  padding: 14px 39px 15px 38px;
   border-radius: 100px;
   background: #F6F6F6;
   border: solid 2px #F1CDB3;
-  margin: 0 auto;
+  margin-left: 42px;
   font-size: 17px;
   letter-spacing: 0.5px;
   line-height: 30.5px;
