@@ -105,6 +105,7 @@ header {
   margin-bottom: 90px;
   column-gap: 42px;
   padding: 0 40px;
+  margin-top: 40px;
 }
 
 .header-logo :active {
