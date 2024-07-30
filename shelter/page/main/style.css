@@ -307,6 +307,7 @@ main {
 }
 
 .slider-item:hover {
+  background-color: #FFFFFF;
   cursor: pointer;
   box-shadow: 0px 2px 35px 14px #0D0D0D0A;
 }
