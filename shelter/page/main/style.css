@@ -521,7 +521,7 @@ main {
   top: 0;
   width: 40px;
   height: 32px;
-  background-image: url(/shelter/assets/icons/credit-card.svg);
+  background-image: url(../../assets/icons/credit-card.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -587,7 +587,7 @@ footer {
   top: 0;
   width: 40px;
   height: 32px;
-  background-image: url(/shelter/assets/icons/icon-email.svg);
+  background-image: url(../../assets/icons/icon-email.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -598,7 +598,7 @@ footer {
 }
 
 .foot-phone::before {
-  background-image: url(/shelter/assets/icons/Phone.svg);
+  background-image: url(../../assets/icons/Phone.svg);
 }
 
 .market {
@@ -609,7 +609,7 @@ footer {
 
 .market::before,
 .street::before {
-  background-image: url(/shelter/assets/icons/icon-marker.svg);
+  background-image: url(../../assets/icons/icon-marker.svg);
   top: 11px;
 }
 
