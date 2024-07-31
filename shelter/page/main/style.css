@@ -242,6 +242,9 @@ main {
   letter-spacing: 1px;
 }
 
+.button-primery:hover {
+  background-color: #FDDCC4;
+}
 
 
 /* About */
