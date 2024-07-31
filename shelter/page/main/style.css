@@ -242,8 +242,10 @@ main {
   letter-spacing: 1px;
 }
 
-.button-primery:hover {
+.button-primery:hover,
+.slider-tab:hover {
   background-color: #FDDCC4;
+  transition: 0.5s;
 }
 
 
@@ -399,6 +401,8 @@ main {
   justify-content: center;
   background-color: #F1CDB3;
 }
+
+
 
 /*Help*/
 
