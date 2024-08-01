@@ -248,7 +248,6 @@ main {
   transition: 0.5s;
 }
 
-
 /* About */
 .about {
   padding: 37px 0 75px;
@@ -323,8 +322,6 @@ main {
   border-color: #FDDCC4;
   transition: 0.5s;
 }
-
-
 
 .slider-title {
   color: #545454;
@@ -402,14 +399,11 @@ main {
   background-color: #F1CDB3;
 }
 
-
-
-/*Help*/
-.help {
-  max-width: 1200px;
-  margin: 0 auto;
+.slider-tab:hover {
+  background-color: #FDDCC4;
 }
 
+/*Help*/
 
 .help__title {
   text-align: center;
@@ -417,24 +411,63 @@ main {
 }
 
 .list-top {
-  display: flex;
-  justify-content: center;
-  column-gap: 120px;
-  row-gap: 55px;
-  flex-wrap: wrap;
-  padding: 0 69px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  margin: 0 127px;
 }
 
 .list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+  margin-bottom: 55px;
+}
+
+.list-item:nth-child(1) {
+  margin-right: 122px;
+}
+
+.list-item:nth-child(2) {
+  margin-right: 61px;
+}
+
+.list-item:nth-child(3) {
+  margin-right: 22px;
+}
+
+.list-item:nth-child(4) {
+  margin-left: 22px;
+}
+
+.list-item:nth-child(5) {
+  margin-left: 104px;
+}
+
+.list-item:nth-child(6) {
+  margin-left: 53px;
+}
+
+.list-item:nth-child(7) {
+  margin-left: 72px;
+}
+
+.list-item:nth-child(8) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  margin-right: 36px;
+  grid-row: 2;
+}
+
+.list-item:last-child {
+  margin-left: 100px;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
 }
 
 
 .list-tile {
+  margin-top: 30px;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.06em;
@@ -443,11 +476,10 @@ main {
 }
 
 /*donation*/
-
 .donation {
   display: flex;
   gap: 30px;
-  margin: 181px 183px 0;
+  margin: 125px 183px;
 }
 
 .donation__content {
@@ -517,7 +549,7 @@ main {
 /*footer*/
 
 footer {
-  padding: 140px 40px 0;
+  padding: 14px 40px;
   background: url(../../assets/img/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
 }
@@ -528,7 +560,6 @@ footer {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
-  flex-wrap: wrap;
 }
 
 .contacts__title,
