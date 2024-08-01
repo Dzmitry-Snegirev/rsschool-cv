@@ -290,7 +290,7 @@ header {
 }
 
 .pagination a path {
-  fill: #CDCDCD;
+  fill: #000;
 }
 
 .pagination a.active {
@@ -301,14 +301,16 @@ header {
 
 .no-active {
   cursor: default;
+  border-color: #CDCDCD !important;
 }
 
-.pagination a:hover:not(.active, .no-active) path {
-  fill: #000;
+.no-active path {
+  fill: #CDCDCD !important;
 }
 
 .pagination a:hover:not(.active, .no-active) {
-  border-color: #F1CDB3;
+  background-color: #F1CDB3;
+  transition: 0.5s;
 }
 
 
