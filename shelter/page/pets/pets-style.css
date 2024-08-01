@@ -239,6 +239,7 @@ header {
   font-size: 17px;
   line-height: 22.1px;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .mod-left {
@@ -280,7 +281,7 @@ header {
   height: 52px;
   border-radius: 100px;
   border: solid 2px;
-  border-color: #CDCDCD;
+  border-color: #F1CDB3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,7 +291,7 @@ header {
 }
 
 .pagination a path {
-  fill: #CDCDCD;
+  fill: #000;
 }
 
 .pagination a.active {
@@ -301,14 +302,16 @@ header {
 
 .no-active {
   cursor: default;
+  border-color: #CDCDCD !important;
 }
 
-.pagination a:hover:not(.active, .no-active) path {
-  fill: #000;
+.no-active path {
+  fill: #CDCDCD !important;
 }
 
 .pagination a:hover:not(.active, .no-active) {
-  border-color: #F1CDB3;
+  background-color: #F1CDB3;
+  transition: 0.5s;
 }
 
 
