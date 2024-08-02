@@ -165,6 +165,7 @@ header {
 }
 
 .active {
+  line-height: 27px;
   border-bottom: 3px solid #F1CDB3;
   color: #cdcdcd;
   cursor: default;
