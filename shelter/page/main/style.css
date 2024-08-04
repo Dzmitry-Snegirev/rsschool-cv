@@ -283,6 +283,7 @@ main {
 .about__text {
   font-size: 15px;
   line-height: 24px;
+  font-family: Arial;
 }
 
 .pets {
@@ -333,19 +334,21 @@ main {
   margin-top: 30px;
   margin-bottom: 24px;
   font-size: 20px;
+  letter-spacing: 0.06em;
 }
 
 .slider-button {
   width: 187px;
   height: 52px;
-  padding: 14px 39px 15px 38px;
+  padding: 16px 39px 15px 38px;
   border-radius: 100px;
   background: #F6F6F6;
   border: solid 2px #F1CDB3;
   margin-left: 42px;
-  font-size: 17px;
-  letter-spacing: 0.5px;
-  line-height: 30.5px;
+  font-size: 19px;
+  letter-spacing: 0.06em;
+  line-height: 22.1px;
+  font-family: Georgia serif;
 }
 
 .arow-wrap {
@@ -390,14 +393,14 @@ main {
 .slider-tab {
   width: 261px;
   height: 52px;
-  padding: 15px 45px 15px 45px;
+  padding: 15px 41px 15px 40px;
   border-radius: 100px;
   margin: 0 auto;
   color: #292929;
   font-size: 17px;
   margin-bottom: 100px;
   line-height: 22.1px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   display: flex;
   justify-content: center;
   background-color: #F1CDB3;
