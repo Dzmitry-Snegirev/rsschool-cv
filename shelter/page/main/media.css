@@ -35,6 +35,48 @@
   .photo-media {
     width: 81%;
   }
+
+  .list-item {
+    width: 170px;
+  }
+
+  .list-top {
+    column-gap: 60px;
+  }
+
+  .donation__content {
+    margin-left: 62px;
+  }
+
+  .donation {
+    margin: 183px 131px 0 132px;
+    align-items: flex-start;
+  }
+
+  .donation__pets {
+    padding-top: 28px;
+  }
+
+  footer {
+    padding: 115px 40px 0;
+  }
+
+  .footer-content {
+    padding: 0 24px;
+    row-gap: 64px;
+  }
+
+  .contacts__title {
+    margin-bottom: 14px;
+  }
+
+  .locations__title {
+    margin-bottom: 3px;
+  }
+
+  .pets {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 880px) {
