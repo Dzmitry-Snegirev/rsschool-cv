@@ -120,6 +120,16 @@ header {
   column-gap: 42px;
 }
 
+.header__menu-burger {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 100px;
+  border: 1px solid #665F55;
+  position: relative;
+}
+
+
 .header-logo :active {
   border: none;
 }

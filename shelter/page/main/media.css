@@ -143,3 +143,40 @@
   }
 
 }
+
+
+@media (max-width: 730px) {
+
+  header,
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .slider-container {
+    grid-template-columns: 1fr;
+  }
+
+  .donation {
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about__content {
+    width: 300px;
+  }
+
+  .donation__content {
+    margin-left: 0;
+    width: 300px;
+  }
+
+  .button-primery {
+    margin-left: 0;
+  }
+
+  .donation-card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 320px) {}
