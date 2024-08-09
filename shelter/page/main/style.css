@@ -72,7 +72,9 @@ html {
   scroll-behavior: smooth;
 }
 
-
+main {
+  padding-bottom: 140px;
+}
 
 button:hover {
   background: #FDDCC4;
@@ -121,12 +123,29 @@ header {
 }
 
 .header__menu-burger {
-  display: block;
+  display: none;
   width: 42px;
   height: 42px;
-  border-radius: 100px;
-  border: 1px solid #665F55;
   position: relative;
+}
+
+.header__menu-burger span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 72%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  background-color: #F1CDB3;
+  transition: all 0.5s;
+}
+
+.header__menu-burger span:first-child {
+  top: 10px;
+}
+
+.header__menu-burger span:nth-child(2) {
+  top: 20px;
 }
 
 
@@ -531,7 +550,6 @@ main {
 /*footer*/
 
 footer {
-  padding: 140px 40px 0;
   background: url(../../assets/img/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
 }
