@@ -181,7 +181,7 @@
 
 @media (max-width: 320px) {
   .wrapper {
-    padding: 30px 0;
+    padding: 30px 0 0;
   }
 
   .nav {
@@ -220,5 +220,43 @@
 
   .not-only__text {
     margin-bottom: 38px;
+  }
+
+  .photo-media {
+    width: 260px;
+  }
+
+  .figure__not-only {
+    padding-top: 32%;
+    margin-left: 40px;
+  }
+
+  .main__title {
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+  }
+
+  .about {
+    padding: 20px 0 28px;
+  }
+
+  .about__content {
+    text-align: center;
+    padding: 21px 0 22px 0;
+  }
+
+  .mod,
+  .about__text {
+    text-align: justify;
+    padding: 0 15px;
+  }
+
+  .mod {
+    padding-bottom: 22px;
+  }
+
+  .pets {
+    width: 260px;
   }
 }
