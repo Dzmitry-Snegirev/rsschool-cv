@@ -178,6 +178,56 @@
   .donation-card {
     width: 300px;
   }
+
+
+
+  .donation__title {
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .donation-subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 0.001em;
+    padding-left: 13px;
+  }
+
+  .donation {
+    margin: 83px 14px 0 13px;
+  }
+
+  .card-icon::before {
+    width: 30px;
+    height: 23px;
+  }
+
+  .card-icon {
+    font-size: 15px;
+    line-height: 16.5px;
+    padding-top: 3px;
+  }
+
+  .donation-card {
+    width: 281px;
+    margin-left: 9px;
+    padding: 10px 15px 10px 16px;
+  }
+
+  .donation-text {
+    text-align: justify;
+    margin: 0 10px;
+  }
+
+  .donation__pets {
+    padding-top: 12px;
+    padding-left: 20px;
+  }
+
 }
 
 @media (max-width: 320px) {
@@ -317,25 +367,70 @@
     max-height: 50px;
   }
 
-  .donation__title {
-    font-size: 25px;
-    line-height: 32.5px;
-    letter-spacing: 0.06em;
+  main {
+    padding-bottom: 42px;
+  }
+
+  .main__title {
     text-align: center;
-    margin-bottom: 20px;
   }
 
-  .donation-subtitle {
-    font-size: 15px;
-    line-height: 24px;
-    text-align: left;
-    letter-spacing: 0.001em;
-    padding-left: 13px;
+  footer {
+    padding: 15px 10px 0;
   }
 
-  .donation {
-    margin: 83px 14px 0 13px;
+  .footer-content {
+    padding: 0;
+    row-gap: 0;
+  }
+
+  .foot-mail {
+    padding-left: 84px;
+  }
+
+  .foot-mail::before {
+    left: 25px
+  }
+
+  .foot-phone {
+    padding-left: 90px;
+  }
+
+  .foot-phone::before {
+    left: 30px;
+  }
+
+  .locations__title {
+    margin: 0 23px;
   }
 
 
+  .contacts,
+  .locations {
+    width: 300px;
+  }
+
+  .locations {
+    margin-top: 23px;
+    margin-bottom: 40px;
+  }
+
+  .market {
+    margin-bottom: 35px;
+  }
+
+  .market,
+  .street {
+    margin-top: 12px;
+    margin-left: 0;
+  }
+
+  .market::before,
+  .street::before {
+    left: 0;
+  }
+
+  .street::before {
+    top: 1px;
+  }
 }

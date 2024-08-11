@@ -542,7 +542,6 @@ main {
   font-size: 12px;
   font-style: italic;
   line-height: 18px;
-  text-align: left;
   color: #B2B2B2;
   padding-top: 20px;
 }
@@ -575,7 +574,9 @@ footer {
 }
 
 .foot-mail,
-.foot-phone {
+.foot-phone,
+.market,
+.street {
   display: block;
   padding-top: 5px;
   position: relative;
@@ -618,7 +619,12 @@ footer {
 
 .market::before,
 .street::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 32px;
   background-image: url(../../assets/icons/icon-marker.svg);
+  background-repeat: no-repeat;
   top: 11px;
 }
 
