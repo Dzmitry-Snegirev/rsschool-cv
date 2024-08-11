@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Georgia";
-  src: url("/shelter/assets/fonts/georgia/georgia-regular.ttf") format("truetype");
+  src: url("../../assets/fonts/georgia/georgia-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Georgia";
-  src: url("/shelter/assets/fonts/georgia/georgia-italic.ttf") format("truetype");
+  src: url("../../assets/fonts/georgia/georgia-italic.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Georgia";
-  src: url("/shelter/assets/fonts/georgia/georgia-bold-italic.ttf") format("truetype");
+  src: url("../../assets/fonts/georgia/georgia-bold-italic.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -105,6 +105,7 @@ header {
   margin-bottom: 90px;
   column-gap: 42px;
   padding: 0 40px;
+  margin-top: 40px;
 }
 
 .header-logo :active {
@@ -180,7 +181,7 @@ header {
 
 .our-friends {
   position: relative;
-  margin-bottom: 128px;
+  margin-bottom: 89px;
 }
 
 .our-friends__title {
@@ -191,7 +192,7 @@ header {
 .slider-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 54px 40px 90px;
+  margin: 56px 40px 90px;
   gap: 57px 40px;
 }
 
@@ -203,6 +204,7 @@ header {
 }
 
 .slider-item:hover {
+  background-color: #FFFFFF;
   cursor: pointer;
   box-shadow: 0px 2px 35px 14px #0D0D0D0A;
 }
@@ -237,6 +239,7 @@ header {
   font-size: 17px;
   line-height: 22.1px;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .mod-left {
@@ -270,6 +273,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 128px;
 }
 
 .pagination a {
@@ -277,7 +281,7 @@ header {
   height: 52px;
   border-radius: 100px;
   border: solid 2px;
-  border-color: #CDCDCD;
+  border-color: #F1CDB3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,7 +291,7 @@ header {
 }
 
 .pagination a path {
-  fill: #CDCDCD;
+  fill: #000;
 }
 
 .pagination a.active {
@@ -298,22 +302,24 @@ header {
 
 .no-active {
   cursor: default;
+  border-color: #CDCDCD !important;
 }
 
-.pagination a:hover:not(.active, .no-active) path {
-  fill: #000;
+.no-active path {
+  fill: #CDCDCD !important;
 }
 
 .pagination a:hover:not(.active, .no-active) {
-  border-color: #F1CDB3;
+  background-color: #F1CDB3;
+  transition: 0.5s;
 }
 
 
 /*footer*/
 
 footer {
-  padding: 14px 40px;
-  background: url(/shelter/assets/image/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  padding: 11px 40px;
+  background: url(../../assets/img/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
 }
 
@@ -358,7 +364,7 @@ footer {
   top: 0;
   width: 40px;
   height: 32px;
-  background-image: url(/shelter/assets/icons/icon-email.svg);
+  background-image: url(../../assets/icons/icon-email.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -369,7 +375,7 @@ footer {
 }
 
 .foot-phone::before {
-  background-image: url(/shelter/assets/icons/Phone.svg);
+  background-image: url(../../assets/icons/Phone.svg);
 }
 
 .market {
@@ -380,7 +386,7 @@ footer {
 
 .market::before,
 .street::before {
-  background-image: url(/shelter/assets/icons/icon-marker.svg);
+  background-image: url(../../assets/icons/icon-marker.svg);
   top: 11px;
 }
 
