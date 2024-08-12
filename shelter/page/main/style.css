@@ -72,9 +72,11 @@ html {
   scroll-behavior: smooth;
 }
 
+
 main {
   padding-bottom: 140px;
 }
+
 
 button:hover {
   background: #FDDCC4;
@@ -355,8 +357,6 @@ main {
   transition: 0.5s;
 }
 
-
-
 .slider-title {
   color: #545454;
   text-align: center;
@@ -369,6 +369,16 @@ main {
 .slider-button {
   width: 187px;
   height: 52px;
+
+  padding: 14px 39px 15px 38px;
+  border-radius: 100px;
+  background: #F6F6F6;
+  border: solid 2px #F1CDB3;
+  margin-left: 42px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  line-height: 30.5px;
+
   padding: 16px 39px 15px 38px;
   border-radius: 100px;
   background: #F6F6F6;
@@ -378,6 +388,7 @@ main {
   letter-spacing: 0.06em;
   line-height: 22.1px;
   font-family: Georgia serif;
+
 }
 
 .arow-wrap {
@@ -435,6 +446,10 @@ main {
   background-color: #F1CDB3;
 }
 
+
+.slider-tab:hover {
+  background-color: #FDDCC4;
+}
 
 
 /*Help*/
@@ -549,6 +564,7 @@ main {
 /*footer*/
 
 footer {
+  padding: 14px 40px;
   background: url(../../assets/img/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
 }
@@ -619,6 +635,7 @@ footer {
 
 .market::before,
 .street::before {
+  background-image: url(../../assets/icons/icon-marker.svg);
   position: absolute;
   content: "";
   width: 40px;
