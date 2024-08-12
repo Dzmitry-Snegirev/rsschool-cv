@@ -1,0 +1,80 @@
+@media (max-width: 1200px) {
+  .slider-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    grid-auto-rows: 0;
+    margin: 24px 94px 0px;
+    gap: 57px 37px;
+  }
+
+  header {
+    margin-bottom: 0;
+    margin-top: 24px;
+    padding: 2px 30px;
+    column-gap: 0;
+  }
+
+  .header__menu-burger {
+    display: none;
+  }
+
+  .nav__list {
+    padding-top: 0;
+  }
+
+  main {
+    margin-top: 88px;
+  }
+
+  .our-friends {
+    margin-bottom: 12px;
+  }
+
+  .pagination {
+    margin-bottom: 75px;
+  }
+
+  footer {
+    padding: 15px 40px 0;
+  }
+
+  .footer-content {
+    padding: 0 24px;
+    row-gap: 64px;
+    flex-wrap: wrap;
+  }
+
+  .contacts__title {
+    margin-bottom: 38px;
+  }
+
+  .locations__title {
+    margin-bottom: 26px;
+  }
+
+  .pets {
+    margin: 0 auto;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 30px 30px 0;
+  }
+
+  .nav-title {
+    line-height: 110%;
+    padding-top: 4px;
+  }
+
+  .nav-subtitle {
+    padding-top: 7px;
+    padding-left: 4px;
+  }
+
+}
