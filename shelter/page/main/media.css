@@ -1,0 +1,436 @@
+@media (max-width: 1200px) {
+  .slider-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    grid-auto-rows: 0;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
+
+  .donation {
+    flex-direction: column-reverse;
+  }
+
+  .not-only {
+    justify-content: center;
+  }
+
+  .not-only__content {
+    padding-top: 53px;
+  }
+
+  .not-only__text {
+    margin-bottom: 39px;
+  }
+
+  .figure__not-only {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 14%;
+  }
+
+  .photo-media {
+    width: 81%;
+  }
+
+  .list-item {
+    width: 170px;
+  }
+
+  .list-top {
+    column-gap: 60px;
+  }
+
+  .donation__content {
+    margin-left: 62px;
+  }
+
+  .donation {
+    margin: 183px 131px 0 132px;
+    align-items: flex-start;
+  }
+
+  .donation__pets {
+    padding-top: 28px;
+  }
+
+  footer {
+    padding: 115px 40px 0;
+  }
+
+  .footer-content {
+    padding: 0 24px;
+    row-gap: 64px;
+  }
+
+  .contacts__title {
+    margin-bottom: 14px;
+  }
+
+  .locations__title {
+    margin-bottom: 3px;
+  }
+
+  .pets {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 880px) {
+  .not-only {
+    flex-wrap: wrap;
+  }
+
+  .button-primery {
+    margin-left: 127px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .not-only__content {
+    padding-top: 53px;
+  }
+
+
+  .wrapper {
+    padding: 30px 30px 0;
+  }
+
+  .nav-title {
+    line-height: 110%;
+    padding-top: 4px;
+  }
+
+  .nav-subtitle {
+    padding-top: 7px;
+    padding-left: 4px;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px 0 75px;
+  }
+
+  .about__content {
+    width: 430px;
+    padding: 60px 0 60px 0;
+  }
+
+  .main__title {
+    padding-bottom: 24px;
+    line-height: 46px;
+  }
+
+  .slider-container {
+    padding: 36px 75px 0 73px;
+    margin: 0 0 92px;
+
+  }
+
+  .arow-wrap {
+    margin-right: 4%;
+    margin-left: 3.9%;
+    top: 51.2%;
+  }
+
+  .slider-title {
+    margin-top: 27px;
+  }
+
+}
+
+
+@media (max-width: 730px) {
+
+  header,
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .slider-container {
+    grid-template-columns: 1fr;
+  }
+
+  .donation {
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about__content {
+    width: 300px;
+  }
+
+  .donation__content {
+    margin-left: 0;
+    width: 300px;
+  }
+
+  .button-primery {
+    margin-left: 0;
+  }
+
+  .donation-card {
+    width: 300px;
+  }
+
+
+
+  .donation__title {
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .donation-subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 0.001em;
+    padding-left: 13px;
+  }
+
+  .donation {
+    margin: 83px 14px 0 13px;
+  }
+
+  .card-icon::before {
+    width: 30px;
+    height: 23px;
+  }
+
+  .card-icon {
+    font-size: 15px;
+    line-height: 16.5px;
+    padding-top: 3px;
+  }
+
+  .donation-card {
+    width: 281px;
+    margin-left: 9px;
+    padding: 10px 15px 10px 16px;
+  }
+
+  .donation-text {
+    text-align: justify;
+    margin: 0 10px;
+  }
+
+  .donation__pets {
+    padding-top: 12px;
+    padding-left: 20px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    padding: 30px 0 0;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header__menu-burger {
+    display: block;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+  .not-only__title {
+    font-size: 25px;
+    text-align: center;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+    margin-bottom: 41px;
+  }
+
+  .not-only__content {
+    padding-top: 56px;
+    text-align: center;
+  }
+
+  .not-only__text {
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  .not-only__text {
+    margin-bottom: 38px;
+  }
+
+  .photo-media {
+    width: 260px;
+  }
+
+  .figure__not-only {
+    padding-top: 32%;
+    margin-left: 40px;
+  }
+
+  .main__title {
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+  }
+
+  .about {
+    padding: 20px 0 28px;
+  }
+
+  .about__content {
+    text-align: center;
+    padding: 21px 0 22px 0;
+  }
+
+  .mod,
+  .about__text {
+    text-align: justify;
+    padding: 0 15px;
+  }
+
+  .mod {
+    padding-bottom: 22px;
+  }
+
+  .pets {
+    width: 260px;
+  }
+
+  .slider-container {
+    justify-content: center;
+    padding: 16px 74px 0 73px;
+    margin-bottom: 146px;
+  }
+
+  .arow-wrap {
+    margin-right: 21%;
+    margin-left: 21.9%;
+    top: 80%;
+  }
+
+  .slider-title {
+    padding-left: 2px;
+  }
+
+  .slider-tab {
+    margin-bottom: 0;
+  }
+
+  .help__title {
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+    margin-bottom: 39px;
+  }
+
+  .our-friends {
+    margin-bottom: 85px;
+  }
+
+  .list-tile {
+    font-size: 15px;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .list-top {
+    margin: 0 15px;
+    padding: 0;
+    justify-content: flex-start;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .list-item {
+    width: 130px;
+    gap: 21px;
+  }
+
+  .list-item svg {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  main {
+    padding-bottom: 42px;
+  }
+
+  .main__title {
+    text-align: center;
+  }
+
+  footer {
+    padding: 15px 10px 0;
+  }
+
+  .footer-content {
+    padding: 0;
+    row-gap: 0;
+  }
+
+  .foot-mail {
+    padding-left: 84px;
+  }
+
+  .foot-mail::before {
+    left: 25px
+  }
+
+  .foot-phone {
+    padding-left: 90px;
+  }
+
+  .foot-phone::before {
+    left: 30px;
+  }
+
+  .locations__title {
+    margin: 0 23px;
+  }
+
+
+  .contacts,
+  .locations {
+    width: 300px;
+  }
+
+  .locations {
+    margin-top: 23px;
+    margin-bottom: 40px;
+  }
+
+  .market {
+    margin-bottom: 35px;
+  }
+
+  .market,
+  .street {
+    margin-top: 12px;
+    margin-left: 0;
+  }
+
+  .market::before,
+  .street::before {
+    left: 0;
+  }
+
+  .street::before {
+    top: 1px;
+  }
+}

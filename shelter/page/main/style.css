@@ -73,6 +73,10 @@ html {
 }
 
 
+main {
+  padding-bottom: 140px;
+}
+
 
 button:hover {
   background: #FDDCC4;
@@ -120,6 +124,33 @@ header {
   column-gap: 42px;
 }
 
+.header__menu-burger {
+  display: none;
+  width: 42px;
+  height: 42px;
+  position: relative;
+}
+
+.header__menu-burger span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 72%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  background-color: #F1CDB3;
+  transition: all 0.5s;
+}
+
+.header__menu-burger span:first-child {
+  top: 10px;
+}
+
+.header__menu-burger span:nth-child(2) {
+  top: 20px;
+}
+
+
 .header-logo :active {
   border: none;
 }
@@ -165,6 +196,7 @@ header {
 }
 
 .active {
+  line-height: 27px;
   border-bottom: 3px solid #F1CDB3;
   color: #cdcdcd;
   cursor: default;
@@ -248,6 +280,7 @@ main {
   transition: 0.5s;
 }
 
+
 /* About */
 .about {
   padding: 37px 0 75px;
@@ -281,6 +314,7 @@ main {
 .about__text {
   font-size: 15px;
   line-height: 24px;
+  font-family: Arial;
 }
 
 .pets {
@@ -329,11 +363,13 @@ main {
   margin-top: 30px;
   margin-bottom: 24px;
   font-size: 20px;
+  letter-spacing: 0.06em;
 }
 
 .slider-button {
   width: 187px;
   height: 52px;
+
   padding: 14px 39px 15px 38px;
   border-radius: 100px;
   background: #F6F6F6;
@@ -342,6 +378,17 @@ main {
   font-size: 17px;
   letter-spacing: 0.5px;
   line-height: 30.5px;
+
+  padding: 16px 39px 15px 38px;
+  border-radius: 100px;
+  background: #F6F6F6;
+  border: solid 2px #F1CDB3;
+  margin-left: 43px;
+  font-size: 19px;
+  letter-spacing: 0.06em;
+  line-height: 22.1px;
+  font-family: Georgia serif;
+
 }
 
 .arow-wrap {
@@ -386,24 +433,31 @@ main {
 .slider-tab {
   width: 261px;
   height: 52px;
-  padding: 15px 45px 15px 45px;
+  padding: 15px 41px 15px 40px;
   border-radius: 100px;
   margin: 0 auto;
   color: #292929;
   font-size: 17px;
   margin-bottom: 100px;
   line-height: 22.1px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   display: flex;
   justify-content: center;
   background-color: #F1CDB3;
 }
 
+
 .slider-tab:hover {
   background-color: #FDDCC4;
 }
 
+
 /*Help*/
+.help {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 .help__title {
   text-align: center;
@@ -411,63 +465,24 @@ main {
 }
 
 .list-top {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
-  margin: 0 127px;
+  display: flex;
+  justify-content: center;
+  column-gap: 120px;
+  row-gap: 55px;
+  flex-wrap: wrap;
+  padding: 0 69px;
 }
 
 .list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 55px;
-}
-
-.list-item:nth-child(1) {
-  margin-right: 122px;
-}
-
-.list-item:nth-child(2) {
-  margin-right: 61px;
-}
-
-.list-item:nth-child(3) {
-  margin-right: 22px;
-}
-
-.list-item:nth-child(4) {
-  margin-left: 22px;
-}
-
-.list-item:nth-child(5) {
-  margin-left: 104px;
-}
-
-.list-item:nth-child(6) {
-  margin-left: 53px;
-}
-
-.list-item:nth-child(7) {
-  margin-left: 72px;
-}
-
-.list-item:nth-child(8) {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  margin-right: 36px;
-  grid-row: 2;
-}
-
-.list-item:last-child {
-  margin-left: 100px;
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 2;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 
 .list-tile {
-  margin-top: 30px;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.06em;
@@ -476,10 +491,11 @@ main {
 }
 
 /*donation*/
+
 .donation {
   display: flex;
   gap: 30px;
-  margin: 125px 183px;
+  margin: 181px 183px 0;
 }
 
 .donation__content {
@@ -541,7 +557,6 @@ main {
   font-size: 12px;
   font-style: italic;
   line-height: 18px;
-  text-align: left;
   color: #B2B2B2;
   padding-top: 20px;
 }
@@ -560,6 +575,7 @@ footer {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
+  flex-wrap: wrap;
 }
 
 .contacts__title,
@@ -574,7 +590,9 @@ footer {
 }
 
 .foot-mail,
-.foot-phone {
+.foot-phone,
+.market,
+.street {
   display: block;
   padding-top: 5px;
   position: relative;
@@ -618,6 +636,12 @@ footer {
 .market::before,
 .street::before {
   background-image: url(../../assets/icons/icon-marker.svg);
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 32px;
+  background-image: url(../../assets/icons/icon-marker.svg);
+  background-repeat: no-repeat;
   top: 11px;
 }
 
