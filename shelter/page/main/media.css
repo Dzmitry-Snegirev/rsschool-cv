@@ -91,6 +91,13 @@
 }
 
 @media (max-width: 768px) {
+  main {
+    padding-bottom: 112px;
+  }
+
+  footer {
+    padding: 3px 40px 0;
+  }
 
   .not-only__content {
     padding-top: 53px;
@@ -143,6 +150,10 @@
     margin-top: 27px;
   }
 
+  .market::before,
+  .street::before {
+    left: 0;
+  }
 }
 
 
