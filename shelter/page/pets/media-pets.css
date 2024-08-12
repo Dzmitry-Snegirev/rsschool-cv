@@ -1,11 +1,11 @@
 @media (max-width: 1200px) {
   .slider-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     overflow-y: hidden;
     overflow-x: hidden;
     grid-auto-rows: 0;
-    margin: 24px 94px 90px;
+    margin: 24px 94px 0px;
     gap: 57px 37px;
   }
 
@@ -26,6 +26,36 @@
 
   main {
     margin-top: 88px;
+  }
+
+  .our-friends {
+    margin-bottom: 12px;
+  }
+
+  .pagination {
+    margin-bottom: 75px;
+  }
+
+  footer {
+    padding: 15px 40px 0;
+  }
+
+  .footer-content {
+    padding: 0 24px;
+    row-gap: 64px;
+    flex-wrap: wrap;
+  }
+
+  .contacts__title {
+    margin-bottom: 38px;
+  }
+
+  .locations__title {
+    margin-bottom: 26px;
+  }
+
+  .pets {
+    margin: 0 auto;
   }
 
 }
