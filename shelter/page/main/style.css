@@ -357,6 +357,8 @@ main {
   transition: 0.5s;
 }
 
+
+
 .slider-title {
   color: #545454;
   text-align: center;
@@ -369,16 +371,6 @@ main {
 .slider-button {
   width: 187px;
   height: 52px;
-
-  padding: 14px 39px 15px 38px;
-  border-radius: 100px;
-  background: #F6F6F6;
-  border: solid 2px #F1CDB3;
-  margin-left: 42px;
-  font-size: 17px;
-  letter-spacing: 0.5px;
-  line-height: 30.5px;
-
   padding: 16px 39px 15px 38px;
   border-radius: 100px;
   background: #F6F6F6;
@@ -388,7 +380,6 @@ main {
   letter-spacing: 0.06em;
   line-height: 22.1px;
   font-family: Georgia serif;
-
 }
 
 .arow-wrap {
@@ -447,9 +438,7 @@ main {
 }
 
 
-.slider-tab:hover {
-  background-color: #FDDCC4;
-}
+
 
 
 /*Help*/
