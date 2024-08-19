@@ -482,6 +482,7 @@ main {
 /*donation*/
 
 .donation {
+  background: #F6F6F6;
   display: flex;
   gap: 30px;
   margin: 181px 183px 0;
