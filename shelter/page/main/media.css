@@ -289,7 +289,7 @@
   }
 
   .figure__not-only {
-    padding-top: 32%;
+    padding-top: 31%;
     margin-left: 40px;
   }
 
@@ -444,6 +444,10 @@
   .market::before,
   .street::before {
     left: 0;
+  }
+
+  .donation__title {
+    margin-bottom: 18px;
   }
 
 }
