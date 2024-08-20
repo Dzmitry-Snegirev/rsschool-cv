@@ -72,9 +72,9 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-  padding-bottom: 140px;
-}
+
+
+
 
 button:hover {
   background: #FDDCC4;
@@ -118,7 +118,7 @@ button:hover {
 header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 90px;
+  margin-bottom: 86px;
   column-gap: 42px;
 }
 
@@ -212,6 +212,8 @@ header {
 main {
   max-width: 1280px;
   margin: 0 auto;
+  padding-bottom: 100px;
+  background: #F6F6F6;
 }
 
 /* Not only */
@@ -231,7 +233,7 @@ main {
 }
 
 .not-only__content {
-  padding-top: 157px;
+  padding-top: 159px;
 }
 
 .not-only__title {
@@ -281,7 +283,7 @@ main {
 
 /* About */
 .about {
-  padding: 37px 0 75px;
+  padding: 40px 0 75px;
   column-gap: 120px;
   display: flex;
   justify-content: center;
@@ -323,7 +325,7 @@ main {
 
 .our-friends {
   position: relative;
-  margin-bottom: 180px;
+  margin-bottom: 177px;
 }
 
 .our-friends__title {
@@ -371,7 +373,7 @@ main {
   height: 52px;
   padding: 16px 39px 15px 38px;
   border-radius: 100px;
-  background: #F6F6F6;
+  background: transparent;
   border: solid 2px #F1CDB3;
   margin-left: 43px;
   font-size: 19px;
@@ -437,6 +439,8 @@ main {
 
 
 
+
+
 /*Help*/
 .help {
   max-width: 1200px;
@@ -478,6 +482,7 @@ main {
 /*donation*/
 
 .donation {
+  background: #F6F6F6;
   display: flex;
   gap: 30px;
   margin: 181px 183px 0;
@@ -549,6 +554,7 @@ main {
 /*footer*/
 
 footer {
+  padding: 14px 40px 0px;
   background: url(../../assets/img/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
 }
@@ -558,7 +564,7 @@ footer {
   justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 26px 0px 0px;
   flex-wrap: wrap;
 }
 
@@ -619,6 +625,7 @@ footer {
 
 .market::before,
 .street::before {
+  background-image: url(../../assets/icons/icon-marker.svg);
   position: absolute;
   content: "";
   width: 40px;
@@ -626,6 +633,7 @@ footer {
   background-image: url(../../assets/icons/icon-marker.svg);
   background-repeat: no-repeat;
   top: 11px;
+  left: 0;
 }
 
 .street {
