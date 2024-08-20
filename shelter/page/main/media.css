@@ -92,10 +92,6 @@
 
 @media (max-width: 768px) {
 
-  .header__menu-burger {
-    display: block;
-  }
-
   main {
     padding-bottom: 102px;
   }
@@ -160,6 +156,17 @@
     left: 0;
   }
 }
+
+@media (max-width: 767px) {
+  .header__menu-burger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
 
 
 @media (max-width: 730px) {
