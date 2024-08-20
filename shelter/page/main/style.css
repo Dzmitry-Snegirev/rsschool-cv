@@ -118,7 +118,7 @@ button:hover {
 header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 90px;
+  margin-bottom: 86px;
   column-gap: 42px;
 }
 
@@ -213,6 +213,7 @@ main {
   max-width: 1280px;
   margin: 0 auto;
   padding-bottom: 100px;
+  background: #F6F6F6;
 }
 
 /* Not only */
@@ -232,7 +233,7 @@ main {
 }
 
 .not-only__content {
-  padding-top: 157px;
+  padding-top: 159px;
 }
 
 .not-only__title {
@@ -282,7 +283,7 @@ main {
 
 /* About */
 .about {
-  padding: 37px 0 75px;
+  padding: 40px 0 75px;
   column-gap: 120px;
   display: flex;
   justify-content: center;
@@ -324,7 +325,7 @@ main {
 
 .our-friends {
   position: relative;
-  margin-bottom: 180px;
+  margin-bottom: 177px;
 }
 
 .our-friends__title {
@@ -372,7 +373,7 @@ main {
   height: 52px;
   padding: 16px 39px 15px 38px;
   border-radius: 100px;
-  background: #F6F6F6;
+  background: transparent;
   border: solid 2px #F1CDB3;
   margin-left: 43px;
   font-size: 19px;

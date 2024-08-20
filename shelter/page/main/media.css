@@ -92,11 +92,11 @@
 
 @media (max-width: 768px) {
   main {
-    padding-bottom: 112px;
+    padding-bottom: 102px;
   }
 
   footer {
-    padding: 3px 40px 0;
+    padding: 13px 40px 0;
   }
 
   .not-only__content {
@@ -324,7 +324,7 @@
 
   .slider-container {
     justify-content: center;
-    padding: 16px 74px 0 73px;
+    padding: 14px 74px 0 73px;
     margin-bottom: 146px;
   }
 
