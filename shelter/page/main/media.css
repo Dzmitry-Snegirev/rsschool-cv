@@ -436,14 +436,14 @@
     margin-left: 0;
   }
 
+  .street {
+    padding-top: 2px;
+    padding-left: 41px;
+  }
+
   .market::before,
   .street::before {
     left: 0;
   }
-
-  .street::before {
-    top: 1px;
-  }
-
 
 }
