@@ -158,12 +158,34 @@
 }
 
 @media (max-width: 767px) {
+
   .header__menu-burger {
     display: block;
+    z-index: 100;
   }
 
-  .nav {
-    display: none;
+  .header__menu-burger.active {
+    transform: rotate(90deg);
+    border: none;
+  }
+
+
+  .nav__list {
+    position: fixed;
+    z-index: 50;
+    right: -320px;
+    top: 0;
+    height: 100vh;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .nav__list.active {
+    right: 0;
+    /*transition: right var(--transitionDuration);*/
   }
 
   header {
