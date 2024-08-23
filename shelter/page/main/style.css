@@ -122,32 +122,17 @@ header {
   column-gap: 42px;
 }
 
+
 .header__menu-burger {
   display: none;
-  width: 42px;
-  height: 42px;
-  position: relative;
 }
 
 .header__menu-burger span {
   width: 30px;
   height: 2px;
-  position: absolute;
-  top: 72%;
-  left: 64%;
-  transform: translate(-50%, -50%);
   background-color: #F1CDB3;
   transition: all 0.5s;
 }
-
-.header__menu-burger span:first-child {
-  top: 10px;
-}
-
-.header__menu-burger span:nth-child(2) {
-  top: 20px;
-}
-
 
 .header-logo :active {
   border: none;
