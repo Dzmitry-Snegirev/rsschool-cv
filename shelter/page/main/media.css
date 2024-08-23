@@ -173,12 +173,13 @@
   .header__menu-burger.active {
     transform-origin: center center;
     transform: rotate(90deg);
-    transition-duration: 0.3s;
     border: none;
+    cursor: pointer;
   }
 
 
   .nav__list {
+    padding: 87px 0 10px;
     position: fixed;
     z-index: 50;
     right: -320px;
@@ -190,10 +191,18 @@
     align-content: center;
     align-items: center;
     background: #292929;
+    transition-duration: 0.3s;
   }
 
   .nav__list.active {
     right: 0;
+    border: none;
+  }
+
+  .nav__item {
+    padding: 0;
+    font-size: 32px;
+    line-height: 51px;
   }
 
   header {
@@ -202,6 +211,15 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
+  }
+
+  .page-body.menu-opened {
+    overflow: hidden
+  }
+
+  .overlay.overlay-active {
+    background-color: rgba(41, 41, 41, 0.6);
+    width: 100vw;
   }
 }
 
