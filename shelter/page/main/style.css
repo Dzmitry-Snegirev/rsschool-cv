@@ -334,7 +334,21 @@ main {
 .slider-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
   margin: 31px 98px 92px;
+  grid-auto-rows: 0;
+  overflow: hidden;
+}
+
+.slide-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+  padding-bottom: 30px;
+  transition: 0.3s;
 }
 
 .slider-item {

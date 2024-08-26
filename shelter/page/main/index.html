@@ -82,26 +82,16 @@
         </h3>
       </div>
       <div class="slider-container">
-        <div class="slider-item">
-          <img src="../../assets/img/pets-katrine.png" alt="katrine">
-          <h3 class="slider-title">Katrine</h3>
-          <button class="slider-button">Learn more</button>
-        </div>
-        <div class="slider-item "><img src="../../assets/img/pets-jennifer.png" alt="jennifer">
-          <h3 class="slider-title">Jennifer</h3>
-          <button class="slider-button">Learn more</button>
-        </div>
-        <div class="slider-item "><img src="../../assets/img/pets-woody.png" alt="woody">
-          <h3 class="slider-title">Woody</h3>
-          <button class="slider-button">Learn more</button>
-        </div>
+        <div class="slide-block" id="left-block"></div>
+        <div class="slide-block" id="active-block"></div>
+        <div class="slide-block" id="rigth-block"></div>
       </div>
       <a href="../pets/index.html" class="slider-tab">Get to know the rest</a>
-      <div class="arow-wrap"><svg class="arow" width="14" height="6" viewBox="0 0 14 6" fill="none"
+      <div class="arow-wrap" id="btn-left"><svg class="arow" width="14" height="6" viewBox="0 0 14 6" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
         </svg></div>
-      <div class="arow-wrap rigth"><svg class="arow" width="14" height="6" viewBox="0 0 14 6" fill="none"
+      <div class="arow-wrap rigth" id="btn-rigth"><svg class="arow" width="14" height="6" viewBox="0 0 14 6" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
         </svg></div>
@@ -326,6 +316,7 @@
     </div>
   </footer>
   <script src="../main/burgermenu.js"></script>
+  <script src="../main/slider.js"></script>
 </body>
 
 </html>
