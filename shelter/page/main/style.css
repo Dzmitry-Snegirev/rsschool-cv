@@ -332,23 +332,30 @@ main {
 }
 
 .slider-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  margin: 31px 98px 92px;
-  grid-auto-rows: 0;
   overflow: hidden;
+  width: 990px;
+  margin: auto;
+}
+
+.slide-blocks {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-blocks.leftPosition {
+  transition: 0.3s;
+  transform: translateX(990px);
+}
+
+.slide-blocks.rightPosition {
+  transition: 0.3s;
+  transform: translateX(-990px);
 }
 
 .slide-block {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-  background-color: #FAFAFA;
-  border-radius: 9px;
-  padding-bottom: 30px;
-  transition: 0.3s;
+  flex-wrap: nowrap;
+  gap: 90px;
 }
 
 .slider-item {

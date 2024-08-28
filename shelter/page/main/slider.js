@@ -53,35 +53,114 @@ let cardsData = [
 ];
 
 
-const left__block = document.getElementById(".left-block");
-const active__block = document.getElementById(".active-block");
-const right__block = document.getElementById(".rigth-block");
+const left__block = document.getElementById("left-block");
+const active__block = document.getElementById("active-block");
+const right__block = document.getElementById("rigth-block");
 const btnLeft = document.getElementById('btn-left');
 const btnRight = document.getElementById('btn-rigth');
 
-function generateItem(el) {
+const leftName = 'leftPosition';
+const rightName = 'rightPosition';
 
-  for (let i of cardsData) {
-    el.insertAdjacentHTML('afterBegin',
+const sliderPagesContainer = document.getElementById('slide-blocks');
+
+
+function randomItems(repitArr = []) {
+  let arr = [];
+  while (arr.length < 3) {
+    const randNum = Math.floor(1 + Math.random() * cardsData.length);
+    if (!arr.includes(randNum) && repitArr.find((el) => el.id === randNum) === undefined) {
+      arr.push(randNum);
+    }
+  }
+  return arr.map((el) => cardsData[el - 1]);
+}
+
+let currArr = [cardsData[4], cardsData[0], cardsData[2]];
+let pastArr = randomItems(currArr);
+let nextArr = [...pastArr];
+let flag = '';
+
+
+
+function setCardData(card, cardData) {
+  card.id = `petCard${cardData.id}`;
+  card.querySelector('.slider-title').innerHTML = cardData.petName;
+  card.querySelector('img').src = cardData.petImgAddress;
+}
+
+
+function generateItem() {
+  active__block.querySelectorAll('.slider-item').forEach((it, i) => {
+    setCardData(it, currArr[i]);
+  });
+  left__block.querySelectorAll('.slider-item').forEach((it, i) => {
+    setCardData(it, pastArr[i]);
+  });
+  right__block.querySelectorAll('.slider-item').forEach((it, i) => {
+    setCardData(it, nextArr[i]);
+  });
+}
+
+function buildCard() {
+  if (flag === leftName) {
+    nextArr = [...currArr];
+    currArr = [...pastArr];
+    pastArr = randomItems(currArr);
+  } else if (flag === rightName) {
+    pastArr = [...currArr];
+    currArr = [...nextArr];
+    nextArr = randomItems(currArr);
+  }
+}
+/*
+function generateItem(posArr, block) {
+  let init = randomItems(posArr);
+  for (let i of init) {
+    block.insertAdjacentHTML('afterBegin',
       `<div class="slider-item">
           <img src=${i.petImgAddress} alt=${i.petName}>
           <h3 class="slider-title">${i.petName}</h3>
           <button class="slider-button">Learn more</button>
         </div>`);
   }
-};
-
-function randomItems() {
-  let del = [];
-  const randNum = Math.floor(1 + Math.random() * cardsData.length);
-  const arr = [];
-  while (arr.length < 3) {
-    if (!arr.includes(randNum) && del.find((el) => el.id === randNum) === undefined) {
-      arr.push(randNum);
-    }
-  }
-  return arr.map((el) => cardsData[el - 1]);
+};*/
+function btnLeftClickEvent() {
+  flag = leftName;
+  sliderPagesContainer.classList.add(leftName);
+  removeSliderControlsEvent();
 }
+
+function btnRightClickEvent() {
+  flag = rightName;
+  sliderPagesContainer.classList.add(rightName);
+  removeSliderControlsEvent();
+}
+
+
+function addSliderControlsEvent() {
+  btnLeft.addEventListener('click', btnLeftClickEvent);
+  btnRight.addEventListener('click', btnRightClickEvent);
+}
+
+function removeSliderControlsEvent() {
+  btnLeft.removeEventListener('click', btnLeftClickEvent);
+  btnRight.removeEventListener('click', btnRightClickEvent);
+}
+
+sliderPagesContainer.addEventListener('transitionend', () => {
+  buildCard();
+  generateItem();
+  sliderPagesContainer.classList.remove(leftName);
+  sliderPagesContainer.classList.remove(rightName);
+  addSliderControlsEvent();
+})
+
+
+generateItem();
+addSliderControlsEvent();
+
+
 
 /*пример
 
