@@ -1,11 +1,4 @@
 @media (max-width: 1200px) {
-  .slider-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    grid-auto-rows: 0;
-  }
 
   header {
     margin-bottom: 0;
@@ -80,6 +73,28 @@
   }
 }
 
+@media (max-width: 1170px) {
+  .slider-container {
+    width: 580px;
+  }
+
+  .slide-block {
+    gap: 40px;
+  }
+
+  .slider-item.item3 {
+    display: none;
+  }
+
+  .slide-blocks.leftPosition {
+    transform: translateX(580px);
+  }
+
+  .slide-blocks.rigthPosition {
+    transform: translateX(-580px);
+  }
+}
+
 @media (max-width: 880px) {
   .not-only {
     flex-wrap: wrap;
@@ -87,6 +102,32 @@
 
   .button-primery {
     margin-left: 127px;
+  }
+}
+
+@media (max-width: 770px) {
+  .slider-container {
+    width: 270px;
+  }
+
+  .slide-block {
+    gap: 40px;
+  }
+
+  .slider-item.item2 {
+    display: none;
+  }
+
+  .slider-item.item3 {
+    display: none;
+  }
+
+  .slide-blocks.leftPosition {
+    transform: translateX(270px);
+  }
+
+  .slide-blocks.rigthPosition {
+    transform: translateX(-270px);
   }
 }
 
@@ -133,18 +174,6 @@
   .main__title {
     padding-bottom: 24px;
     line-height: 46px;
-  }
-
-  .slider-container {
-    padding: 36px 75px 0 73px;
-    margin: 0 0 92px;
-
-  }
-
-  .arow-wrap {
-    margin-right: 4%;
-    margin-left: 3.9%;
-    top: 51.2%;
   }
 
   .slider-title {
@@ -225,10 +254,6 @@
 
 @media (max-width: 730px) {
 
-  .slider-container {
-    grid-template-columns: 1fr;
-  }
-
   .donation {
     align-content: center;
     flex-wrap: wrap;
@@ -250,8 +275,6 @@
   .donation-card {
     width: 300px;
   }
-
-
 
   .donation__title {
     font-size: 25px;
@@ -302,7 +325,23 @@
 
 }
 
+@media (max-width: 419px) {
+  .wrap__slider {
+    margin-bottom: 53px;
+  }
+
+  .arow-wrap {
+    top: 92%;
+    margin-right: 21%;
+    margin-left: 21%;
+  }
+}
+
 @media (max-width: 320px) {
+  .slider-container {
+    padding-top: 16px;
+  }
+
   .wrapper {
     padding: 30px 0 0;
   }
@@ -383,20 +422,10 @@
     width: 260px;
   }
 
-  .slider-container {
-    justify-content: center;
-    padding: 14px 74px 0 73px;
-    margin-bottom: 146px;
-  }
-
-  .arow-wrap {
-    margin-right: 21%;
-    margin-left: 21.9%;
-    top: 80%;
-  }
 
   .slider-title {
     padding-left: 2px;
+    margin: 0;
   }
 
   .slider-tab {

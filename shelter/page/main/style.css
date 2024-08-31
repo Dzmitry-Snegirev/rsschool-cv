@@ -322,7 +322,6 @@ main {
 /* our-friends */
 
 .our-friends {
-  position: relative;
   margin-bottom: 177px;
 }
 
@@ -331,7 +330,17 @@ main {
   padding-top: 29px;
 }
 
+.wrap__slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 53px;
+  position: relative;
+  padding-bottom: 91px;
+}
+
 .slider-container {
+  padding-top: 34px;
   overflow: hidden;
   width: 990px;
   margin: auto;
@@ -381,8 +390,8 @@ main {
 .slider-title {
   color: #545454;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 24px;
+  padding-top: 26px;
+  padding-bottom: 27px;
   font-size: 20px;
   letter-spacing: 0.06em;
 }
@@ -409,15 +418,15 @@ main {
   border-radius: 100px;
   border: 2px solid #F1CDB3;
   background-color: #fff;
-  top: 51.5%;
+  top: 42.3%;
   margin-right: 3%;
   margin-left: 3%;
 }
 
 .arow {
   position: absolute;
-  top: 46%;
-  left: 32%;
+  top: 48%;
+  left: 36%;
 }
 
 .rigth {

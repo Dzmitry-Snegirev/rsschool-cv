@@ -59,8 +59,8 @@ const right__block = document.getElementById("rigth-block");
 const btnLeft = document.getElementById('btn-left');
 const btnRight = document.getElementById('btn-rigth');
 
-const leftName = 'leftPosition';
-const rightName = 'rightPosition';
+const pastClass = 'leftPosition';
+const nextClass = 'rightPosition';
 
 const sliderPagesContainer = document.getElementById('slide-blocks');
 
@@ -83,7 +83,7 @@ let flag = '';
 
 
 
-function setCardData(card, cardData) {
+function writeItemData(card, cardData) {
   card.id = `petCard${cardData.id}`;
   card.querySelector('.slider-title').innerHTML = cardData.petName;
   card.querySelector('img').src = cardData.petImgAddress;
@@ -92,22 +92,22 @@ function setCardData(card, cardData) {
 
 function generateItem() {
   active__block.querySelectorAll('.slider-item').forEach((it, i) => {
-    setCardData(it, currArr[i]);
+    writeItemData(it, currArr[i]);
   });
   left__block.querySelectorAll('.slider-item').forEach((it, i) => {
-    setCardData(it, pastArr[i]);
+    writeItemData(it, pastArr[i]);
   });
   right__block.querySelectorAll('.slider-item').forEach((it, i) => {
-    setCardData(it, nextArr[i]);
+    writeItemData(it, nextArr[i]);
   });
 }
 
-function buildCard() {
-  if (flag === leftName) {
+function buildBlocksCard() {
+  if (flag === pastClass) {
     nextArr = [...currArr];
     currArr = [...pastArr];
     pastArr = randomItems(currArr);
-  } else if (flag === rightName) {
+  } else if (flag === nextClass) {
     pastArr = [...currArr];
     currArr = [...nextArr];
     nextArr = randomItems(currArr);
@@ -126,36 +126,34 @@ function generateItem(posArr, block) {
   }
 };*/
 function btnLeftClickEvent() {
-  flag = leftName;
-  sliderPagesContainer.classList.add(leftName);
+  flag = pastClass;
+  sliderPagesContainer.classList.add(pastClass);
   removeSliderControlsEvent();
 }
 
 function btnRightClickEvent() {
-  flag = rightName;
-  sliderPagesContainer.classList.add(rightName);
+  flag = nextClass;
+  sliderPagesContainer.classList.add(nextClass);
   removeSliderControlsEvent();
 }
 
 
-function addSliderControlsEvent() {
-  btnLeft.addEventListener('click', btnLeftClickEvent);
-  btnRight.addEventListener('click', btnRightClickEvent);
-}
+
 
 function removeSliderControlsEvent() {
   btnLeft.removeEventListener('click', btnLeftClickEvent);
   btnRight.removeEventListener('click', btnRightClickEvent);
 }
 
-sliderPagesContainer.addEventListener('transitionend', () => {
-  buildCard();
+sliderPagesContainer.addEventListener('transitionend', (e) => {
+  const { currentTarget } = e;
+  if (e.target !== currentTarget || e.propertyName !== 'transform') return;
+  buildBlocksCard();
   generateItem();
-  sliderPagesContainer.classList.remove(leftName);
-  sliderPagesContainer.classList.remove(rightName);
+  sliderPagesContainer.classList.remove(pastClass);
+  sliderPagesContainer.classList.remove(nextClass);
   addSliderControlsEvent();
 })
-
 
 generateItem();
 addSliderControlsEvent();
