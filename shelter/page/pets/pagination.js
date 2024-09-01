@@ -59,12 +59,12 @@ const lastPageBtn = document.getElementById('lastPage');
 const activePaginationBtn = document.getElementById('activePage');
 const main__node = document.querySelector(".wrap__slider");
 const countElements = 8;
-const lastPage = 6;
-const firstPage = 1;
+const endPage = 6;
+const startPage = 1;
 let currentPage = 1;
 
-
-function startElArr(it) {
+/* create arr random index*/
+function startElArr() {
   let arr = []
   while (arr.length < 8) {
     const randNum = Math.floor(1 + Math.random() * cardsData.length);
@@ -74,11 +74,11 @@ function startElArr(it) {
   }
   return arr;
 }
-
+/*init comon arr 48 elements*/
 function randomArr() {
   let arr2 = [];
   while (arr2.length < 6) {
-    arr2.push(startElArr(cardsData));
+    arr2.push(startElArr());
   }
   let res = [].concat(...arr2);
   return res.map((el) => cardsData[el - 1]);
@@ -86,7 +86,7 @@ function randomArr() {
 let startArr = randomArr();
 console.log(startArr);
 
-
+/* generate date-list*/
 function displayList(arrData, rowPerPage, page) {
   page--;
   let start = rowPerPage * page;
@@ -111,44 +111,59 @@ function closeModal() {
   main__node.removeChild(document.querySelector('.slider-container'));
 }
 
-function nextPage() {
-  if (currentPage < 6) {
-    currentPage++;
-  };
+function generateContent() {
   closeModal();
   activePaginationBtn.textContent = currentPage;
   displayList(startArr, countElements, currentPage);
+}
+
+function nextPage() {
+  if (currentPage < 6) {
+    currentPage++;
+  }
+  if (currentPage === endPage) {
+    nextPageBtn.classList.add("no-active");
+    lastPageBtn.classList.add("no-active");
+  }
+  generateContent();
 }
 
 function prevPage() {
   if (currentPage > 1) {
     currentPage--;
   };
-  closeModal();
-  activePaginationBtn.textContent = currentPage;
-  displayList(startArr, countElements, currentPage);
+  /* nextPageBtn.classList.remove("no-active");*/
+  /* lastPageBtn.classList.remove("no-active");*/
+
+  generateContent();
+}
+
+function lastPage() {
+  currentPage = endPage;
+  lastPageBtn.classList.add("no-active");
+  nextPageBtn.classList.add("no-active");
+  generateContent();
+}
+function firstPage() {
+  currentPage = startPage;
+  generateContent();
 }
 
 
 nextPageBtn.addEventListener('click', () => {
   nextPage();
-  /*
-      [firstPageBtn, prevPageBtn].forEach((btn) => { btn.removeAttribute('disabled'); });
-      [nextPageBtn, lastPageBtn].forEach((btn) => { btn.setAttribute('disabled', ''); });
-    */
 });
 
 prevPageBtn.addEventListener('click', () => {
   prevPage();
 });
 
-
-
-
-
 lastPageBtn.addEventListener('click', () => {
-  currentPageNumber = screenData[currentScreenType].lastPage;
-  onPaginationBtnClick();
-})
+  lastPage();
+});
+
+firstPageBtn.addEventListener('click', () => {
+  firstPage();
+});
 
 displayList(startArr, countElements, currentPage);

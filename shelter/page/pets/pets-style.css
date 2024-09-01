@@ -341,9 +341,15 @@ header {
   border: 1px solid #F1CDB3;
 }
 
+.pagination a.active:hover {
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
+}
+
 .no-active {
   cursor: default;
   border-color: #CDCDCD !important;
+  color: #CDCDCD;
 }
 
 .no-active path {
@@ -351,7 +357,8 @@ header {
 }
 
 .pagination a:hover:not(.active, .no-active) {
-  background-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
   transition: 0.5s;
 }
 

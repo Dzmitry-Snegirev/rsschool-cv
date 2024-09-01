@@ -138,7 +138,10 @@ function btnRightClickEvent() {
 }
 
 
-
+function addSliderControlsEvent() {
+  btnLeft.addEventListener('click', btnLeftClickEvent);
+  btnRight.addEventListener('click', btnRightClickEvent);
+}
 
 function removeSliderControlsEvent() {
   btnLeft.removeEventListener('click', btnLeftClickEvent);
