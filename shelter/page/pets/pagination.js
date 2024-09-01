@@ -120,6 +120,9 @@ function generateContent() {
 function nextPage() {
   if (currentPage < 6) {
     currentPage++;
+    firstPageBtn.classList.remove("no-active");
+    prevPageBtn.classList.remove("no-active");
+
   }
   if (currentPage === endPage) {
     nextPageBtn.classList.add("no-active");
@@ -132,9 +135,14 @@ function prevPage() {
   if (currentPage > 1) {
     currentPage--;
   };
-  /* nextPageBtn.classList.remove("no-active");*/
-  /* lastPageBtn.classList.remove("no-active");*/
-
+  if (currentPage < 6) {
+    nextPageBtn.classList.remove("no-active");
+    lastPageBtn.classList.remove("no-active");
+  }
+  if (currentPage === startPage) {
+    firstPageBtn.classList.add("no-active");
+    prevPageBtn.classList.add("no-active");
+  };
   generateContent();
 }
 
@@ -142,10 +150,16 @@ function lastPage() {
   currentPage = endPage;
   lastPageBtn.classList.add("no-active");
   nextPageBtn.classList.add("no-active");
+  firstPageBtn.classList.remove("no-active");
+  prevPageBtn.classList.remove("no-active");
   generateContent();
 }
 function firstPage() {
   currentPage = startPage;
+  firstPageBtn.classList.add("no-active");
+  prevPageBtn.classList.add("no-active");
+  lastPageBtn.classList.remove("no-active");
+  nextPageBtn.classList.remove("no-active");
   generateContent();
 }
 
