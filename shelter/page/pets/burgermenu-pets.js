@@ -15,6 +15,7 @@
     });
 
     overlayWrap.addEventListener('click', () => {
+      if (e.target !== e.currentTarget) return;
       burgerItem.classList.remove("active");
       menu.classList.remove("active");
       overlayWrap.classList.remove("overlay-active");
