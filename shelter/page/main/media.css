@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: 1170px) {
+@media screen and (max-width: 1170px) {
   .slider-container {
     width: 580px;
   }
@@ -93,6 +93,7 @@
   .slide-blocks.rigthPosition {
     transform: translateX(-580px);
   }
+
 }
 
 @media (max-width: 880px) {
@@ -184,6 +185,7 @@
   .street::before {
     left: 0;
   }
+
 }
 
 @media (max-width: 767px) {

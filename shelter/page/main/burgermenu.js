@@ -15,10 +15,12 @@
       overlayWrap.classList.toggle('overlay-active');
     });
 
-    overlayWrap.addEventListener('click', () => {
+    overlayWrap.addEventListener('click', (e) => {
+      if (e.target !== e.currentTarget) return;
       burgerItem.classList.remove("active");
       menu.classList.remove("active");
       overlayWrap.classList.remove("overlay-active");
+      bodyContainer.classList.remove('menu-opened');
     });
 
     document.querySelectorAll(".nav__item").forEach(n => n.addEventListener("click", () => {

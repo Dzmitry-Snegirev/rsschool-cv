@@ -84,7 +84,7 @@ let flag = '';
 
 
 function writeItemData(card, cardData) {
-  card.id = `petCard${cardData.id}`;
+  card.id = `item${cardData.id}`;
   card.querySelector('.slider-title').innerHTML = cardData.petName;
   card.querySelector('img').src = cardData.petImgAddress;
 }
