@@ -106,13 +106,13 @@ function displayList(arrData, rowPerPage, page) {
   console.log(modal);
 }
 
-
+/*
 function closeModal() {
   main__node.removeChild(document.querySelector('.slider-container'));
-}
+}*/
 
 function generateContent() {
-  closeModal();
+  main__node.innerHTML = '';
   activePaginationBtn.textContent = currentPage;
   displayList(startArr, countElements, currentPage);
 }
