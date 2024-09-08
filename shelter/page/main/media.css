@@ -190,6 +190,7 @@
 
 @media (max-width: 767px) {
 
+
   /*burger menu*/
   .header__menu-burger {
     position: relative;
@@ -223,7 +224,28 @@
     align-items: center;
     background: #292929;
     transition-duration: 0.3s;
+
+  .header__menu-burger {
+    display: block;
   }
+
+  .nav {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+
+  }
+}
+
+
+
+@media (max-width: 730px) {
 
   .nav__list.active {
     right: 0;
@@ -422,6 +444,19 @@
 
   .pets {
     width: 260px;
+  }
+
+
+  .slider-container {
+    justify-content: center;
+    padding: 14px 74px 0 73px;
+    margin-bottom: 146px;
+  }
+
+  .arow-wrap {
+    margin-right: 21%;
+    margin-left: 21.9%;
+    top: 80%;
   }
 
 
