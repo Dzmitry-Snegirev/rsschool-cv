@@ -102,7 +102,7 @@ const data = {
 
 
 const overlayModal = document.querySelector('.overlay');
-const slideItems = document.querySelector('.slide-blocks');
+const slideItems = document.querySelector('.slider-container');
 const idItem = 'id';
 const show = document.querySelector('.show-modal');
 

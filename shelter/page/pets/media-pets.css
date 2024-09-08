@@ -7,6 +7,7 @@
     grid-auto-rows: 0;
     margin: 24px 94px 0px;
     gap: 57px 37px;
+    justify-items: center
   }
 
   header {
@@ -147,7 +148,6 @@
 
 @media (max-width: 730px) {
 
-  header,
   .nav__list {
     flex-direction: column;
   }

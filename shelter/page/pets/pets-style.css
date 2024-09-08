@@ -78,6 +78,8 @@ main {
   margin: 0 auto;
 }
 
+
+/*burger and modal overlay */
 .overlay {
   cursor: pointer;
   position: fixed;
@@ -86,12 +88,27 @@ main {
   height: 100vh;
   width: 0;
   z-index: 25;
-  transition: background-color 0.3s;
+  transition: 0.3s;
   background-color: rgba(41, 41, 41, 0);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.overlay.overlay-active {
+  background-color: rgba(41, 41, 41, 0.6);
+  width: 100vw;
+  transition: 0.3s;
+}
+
+
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/*pets page*/
 
 .header__menu-burger {
   display: none;

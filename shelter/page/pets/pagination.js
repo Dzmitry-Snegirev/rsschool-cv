@@ -96,7 +96,7 @@ function displayList(arrData, rowPerPage, page) {
   modal.classList.add('slider-container');
   paginatedData.forEach((el) => {
     modal.insertAdjacentHTML('afterBegin',
-      `<div class="slider-item">
+      `<div class="slider-item" id=item${el.id}>
           <img src=${el.petImgAddress} alt=${el.petName}>
           <h3 class="slider-title">${el.petName}</h3>
           <button class="slider-button">Learn more</button>
