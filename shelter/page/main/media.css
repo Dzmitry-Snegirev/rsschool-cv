@@ -243,7 +243,6 @@
 
 
 @media (max-width: 730px) {
-
   .nav__list.active {
     right: 0;
     border: none;
@@ -271,76 +270,76 @@
     background-color: rgba(41, 41, 41, 0.6);
     width: 100vw;
   }
-}
 
-.donation {
-  align-content: center;
-  flex-wrap: wrap;
-}
 
-.about__content {
-  width: 300px;
-}
+  .donation {
+    align-content: center;
+    flex-wrap: wrap;
+  }
 
-.donation__content {
-  margin-left: 0;
-  width: 300px;
-}
+  .about__content {
+    width: 300px;
+  }
 
-.button-primery {
-  margin-left: 0;
-}
+  .donation__content {
+    margin-left: 0;
+    width: 300px;
+  }
 
-.donation-card {
-  width: 300px;
-}
+  .button-primery {
+    margin-left: 0;
+  }
 
-.donation__title {
-  font-size: 25px;
-  line-height: 32.5px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  margin-bottom: 20px;
-}
+  .donation-card {
+    width: 300px;
+  }
 
-.donation-subtitle {
-  font-size: 15px;
-  line-height: 24px;
-  text-align: left;
-  letter-spacing: 0.001em;
-  padding-left: 13px;
-}
+  .donation__title {
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-.donation {
-  margin: 83px 14px 0 13px;
-}
+  .donation-subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 0.001em;
+    padding-left: 13px;
+  }
 
-.card-icon::before {
-  width: 30px;
-  height: 23px;
-}
+  .donation {
+    margin: 83px 14px 0 13px;
+  }
 
-.card-icon {
-  font-size: 15px;
-  line-height: 16.5px;
-  padding-top: 3px;
-}
+  .card-icon::before {
+    width: 30px;
+    height: 23px;
+  }
 
-.donation-card {
-  width: 281px;
-  margin-left: 9px;
-  padding: 10px 15px 10px 16px;
-}
+  .card-icon {
+    font-size: 15px;
+    line-height: 16.5px;
+    padding-top: 3px;
+  }
 
-.donation-text {
-  text-align: justify;
-  margin: 0 10px;
-}
+  .donation-card {
+    width: 281px;
+    margin-left: 9px;
+    padding: 10px 15px 10px 16px;
+  }
 
-.donation__pets {
-  padding-top: 12px;
-  padding-left: 20px;
-}
+  .donation-text {
+    text-align: justify;
+    margin: 0 10px;
+  }
+
+  .donation__pets {
+    padding-top: 12px;
+    padding-left: 20px;
+  }
 
 }
 
