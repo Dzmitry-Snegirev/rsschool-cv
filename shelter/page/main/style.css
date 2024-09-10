@@ -72,11 +72,34 @@ html {
   scroll-behavior: smooth;
 }
 
-
-main {
-  padding-bottom: 140px;
+.overlay {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  z-index: 25;
+  transition: 0.3s;
+  background-color: rgba(41, 41, 41, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.overlay.overlay-active {
+  background-color: rgba(41, 41, 41, 0.6);
+  width: 100vw;
+  transition: 0.3s;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+/*page stytle*/
 
 button:hover {
   background: #FDDCC4;
@@ -120,36 +143,21 @@ button:hover {
 header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 90px;
+  margin-bottom: 86px;
   column-gap: 42px;
 }
 
+
 .header__menu-burger {
   display: none;
-  width: 42px;
-  height: 42px;
-  position: relative;
 }
 
 .header__menu-burger span {
   width: 30px;
   height: 2px;
-  position: absolute;
-  top: 72%;
-  left: 64%;
-  transform: translate(-50%, -50%);
   background-color: #F1CDB3;
   transition: all 0.5s;
 }
-
-.header__menu-burger span:first-child {
-  top: 10px;
-}
-
-.header__menu-burger span:nth-child(2) {
-  top: 20px;
-}
-
 
 .header-logo :active {
   border: none;
@@ -214,6 +222,8 @@ header {
 main {
   max-width: 1280px;
   margin: 0 auto;
+  padding-bottom: 100px;
+  background: #F6F6F6;
 }
 
 /* Not only */
@@ -233,7 +243,7 @@ main {
 }
 
 .not-only__content {
-  padding-top: 157px;
+  padding-top: 159px;
 }
 
 .not-only__title {
@@ -283,7 +293,7 @@ main {
 
 /* About */
 .about {
-  padding: 37px 0 75px;
+  padding: 40px 0 75px;
   column-gap: 120px;
   display: flex;
   justify-content: center;
@@ -325,7 +335,7 @@ main {
 
 .our-friends {
   position: relative;
-  margin-bottom: 180px;
+  margin-bottom: 177px;
 }
 
 .our-friends__title {
@@ -333,10 +343,41 @@ main {
   padding-top: 29px;
 }
 
+.wrap__slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 53px;
+  position: relative;
+  padding-bottom: 91px;
+}
+
 .slider-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 31px 98px 92px;
+  padding-top: 34px;
+  overflow: hidden;
+  width: 990px;
+  margin: auto;
+}
+
+.slide-blocks {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-blocks.leftPosition {
+  transition: 0.3s;
+  transform: translateX(990px);
+}
+
+.slide-blocks.rightPosition {
+  transition: 0.3s;
+  transform: translateX(-990px);
+}
+
+.slide-block {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 90px;
 }
 
 .slider-item {
@@ -357,11 +398,13 @@ main {
   transition: 0.5s;
 }
 
+
+
 .slider-title {
   color: #545454;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 24px;
+  padding-top: 26px;
+  padding-bottom: 27px;
   font-size: 20px;
   letter-spacing: 0.06em;
 }
@@ -369,26 +412,15 @@ main {
 .slider-button {
   width: 187px;
   height: 52px;
-
-  padding: 14px 39px 15px 38px;
-  border-radius: 100px;
-  background: #F6F6F6;
-  border: solid 2px #F1CDB3;
-  margin-left: 42px;
-  font-size: 17px;
-  letter-spacing: 0.5px;
-  line-height: 30.5px;
-
   padding: 16px 39px 15px 38px;
   border-radius: 100px;
-  background: #F6F6F6;
+  background: transparent;
   border: solid 2px #F1CDB3;
   margin-left: 43px;
   font-size: 19px;
   letter-spacing: 0.06em;
   line-height: 22.1px;
   font-family: Georgia serif;
-
 }
 
 .arow-wrap {
@@ -399,15 +431,15 @@ main {
   border-radius: 100px;
   border: 2px solid #F1CDB3;
   background-color: #fff;
-  top: 51.5%;
+  top: 42.3%;
   margin-right: 3%;
   margin-left: 3%;
 }
 
 .arow {
   position: absolute;
-  top: 46%;
-  left: 32%;
+  top: 48%;
+  left: 36%;
 }
 
 .rigth {
@@ -447,9 +479,7 @@ main {
 }
 
 
-.slider-tab:hover {
-  background-color: #FDDCC4;
-}
+
 
 
 /*Help*/
@@ -493,6 +523,7 @@ main {
 /*donation*/
 
 .donation {
+  background: #F6F6F6;
   display: flex;
   gap: 30px;
   margin: 181px 183px 0;
@@ -564,7 +595,7 @@ main {
 /*footer*/
 
 footer {
-  padding: 14px 40px;
+  padding: 14px 40px 0px;
   background: url(../../assets/img/start-screen-gradient-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
 }
@@ -574,7 +605,7 @@ footer {
   justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 26px 0px 0px;
   flex-wrap: wrap;
 }
 
@@ -643,6 +674,7 @@ footer {
   background-image: url(../../assets/icons/icon-marker.svg);
   background-repeat: no-repeat;
   top: 11px;
+  left: 0;
 }
 
 .street {

@@ -7,6 +7,7 @@
   <title>shelter</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./media.css">
+  <link rel="stylesheet" href="./modal.css">
   <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon_io//favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon_io//favicon-16x16.png">
@@ -14,6 +15,9 @@
 </head>
 
 <body class="page-body">
+  <div class="overlay">
+    <div class="show-modal"></div>
+  </div>
   <div class="fon-wraper">
     <div class="wrapper">
       <header>
@@ -23,19 +27,17 @@
             <p class="nav-subtitle">Shelter for pets in Boston</p>
           </div>
         </a>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="active" href="#about_shelter ">About the shelter</a></li>
+          <li class="nav__item"><a href="../pets/index.html">Our pets</a></li>
+          <li class="nav__item"><a href="#Help_shelter">Help the shelter</a></li>
+          <li class="nav__item"><a href="#contacts">Contacts</a></li>
+        </ul>
         <a class="header__menu-burger" href="#">
           <span></span>
           <span></span>
           <span></span>
         </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="active" href="#about_shelter ">About the shelter</a></li>
-            <li class="nav__item"><a href="../pets/index.html">Our pets</a></li>
-            <li class="nav__item"><a href="#Help_shelter">Help the shelter</a></li>
-            <li class="nav__item"><a href="#contacts">Contacts</a></li>
-          </ul>
-        </nav>
       </header>
       <div class="not-only">
         <div class="not-only__content">
@@ -49,7 +51,6 @@
           <a class="button-primery" href="#make-friend">Make a friend</a>
         </div>
         <figure class="figure__not-only">
-          <img src="../../assets/img/start-screen-content.png" width="698" height="728" class="photo"
           <img src="../../assets/img/start-screen-content.png" width="698" height="728" class="photo photo-media "
             alt="start-screen-puppy">
         </figure>
@@ -83,39 +84,72 @@
           are looking for a house
         </h3>
       </div>
-      <div class="slider-container">
-        <div class="slider-item"><img src="../../assets/img/pets-katrine.png" alt="katrine">
-          <h3 class="slider-title">Katrine</h3>
-          <button class="slider-button">Learn more</button>
+      <div class="wrap__slider">
+        <div class="arow-wrap" id="btn-left"><svg class="arow" width="14" height="6" viewBox="0 0 14 6" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+          </svg></div>
+        <div class="slider-container">
+          <div class="slide-blocks" id="slide-blocks">
+            <div class="slide-block" id="left-block">
+              <div class="slider-item">
+                <img src=../../assets/img/pets-jennifer.png alt="slider-img">
+                <h3 class="slider-title">Jennifer</h3>
+                <button class="slider-button">Learn more</button>
+              </div>
+              <div class="slider-item item2">
+                <img src=../../assets/img/pets-jennifer.png alt="slider-img">
+                <h3 class="slider-title">Jennifer</h3>
+                <button class="slider-button">Learn more</button>
+              </div>
+              <div class="slider-item item3">
+                <img src=../../assets/img/pets-jennifer.png alt="slider-img">
+                <h3 class="slider-title">Jennifer</h3>
+                <button class="slider-button">Learn more</button>
+              </div>
+            </div>
+            <div class="slide-block " id="active-block">
+              <div class="slider-item">
+                <img src=../../assets/img/pets-jennifer.png alt="slider-img">
+                <h3 class="slider-title">Jennifer</h3>
+                <button class="slider-button">Learn more</button>
+              </div>
+              <div class="slider-item item2">
+                <img src=../../assets/img/pets-jennifer.png alt="slider-img">
+                <h3 class="slider-title">Jennifer</h3>
+                <button class="slider-button">Learn more</button>
+              </div>
+              <div class="slider-item item3">
+                <img src=../../assets/img/pets-jennifer.png alt="slider-img">
+                <h3 class="slider-title">Jennifer</h3>
+                <button class="slider-button">Learn more</button>
+              </div>
+            </div>
+            <div class="slide-block" id="rigth-block">
+              <div class="slider-item">
+                <img src=../../assets/img/pets-jennifer.png alt="slider-img">
+                <h3 class="slider-title">Jennifer</h3>
+                <button class="slider-button">Learn more</button>
+              </div>
+              <div class="slider-item item2">
+                <img src=../../assets/img/pets-jennifer.png alt="slider-img">
+                <h3 class="slider-title">Jennifer</h3>
+                <button class="slider-button">Learn more</button>
+              </div>
+              <div class="slider-item item3">
+                <img src=../../assets/img/pets-jennifer.png alt="slider-img">
+                <h3 class="slider-title">Jennifer</h3>
+                <button class="slider-button">Learn more</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="slider-item"><img src="../../assets/img/pets-jennifer.png" alt="jennifer">
-          <h3 class="slider-title">Jennifer</h3>
-          <button class="slider-button">Learn more</button>
-        </div>
-        <div class="slider-item"><img src="../../assets/img/pets-woody.png" alt="woody">
-        <div class="slider-item">
-          <img src="../../assets/img/pets-katrine.png" alt="katrine">
-          <h3 class="slider-title">Katrine</h3>
-          <button class="slider-button">Learn more</button>
-        </div>
-        <div class="slider-item "><img src="../../assets/img/pets-jennifer.png" alt="jennifer">
-          <h3 class="slider-title">Jennifer</h3>
-          <button class="slider-button">Learn more</button>
-        </div>
-        <div class="slider-item "><img src="../../assets/img/pets-woody.png" alt="woody">
-          <h3 class="slider-title">Woody</h3>
-          <button class="slider-button">Learn more</button>
-        </div>
+        <div class="arow-wrap rigth" id="btn-rigth"><svg class="arow" width="14" height="6" viewBox="0 0 14 6"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
+          </svg></div>
       </div>
       <a href="../pets/index.html" class="slider-tab">Get to know the rest</a>
-      <div class="arow-wrap"><svg class="arow" width="14" height="6" viewBox="0 0 14 6" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
-        </svg></div>
-      <div class="arow-wrap rigth"><svg class="arow" width="14" height="6" viewBox="0 0 14 6" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
-        </svg></div>
     </div>
     <div class="help" id="Help_shelter">
       <h3 class="help__title">How you can help
@@ -302,7 +336,8 @@
         </div>
         <p class="donation-text">
           Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero
-          sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac
+          sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames
+          ac
           ante ipsum primis in faucibus.
         </p>
       </div>
@@ -328,7 +363,6 @@
         <a href="https://goo.gl/maps/XagwFeRFKDFtk9to8" class="market" target="_blank">
           <span>1&nbsp;Central Street, Boston (entrance from the store)</span></a>
         <a href="https://goo.gl/maps/XagwFeRFKDFtk9to8" class="foot-phone street" target="_blank">
-        <a href="https://goo.gl/maps/XagwFeRFKDFtk9to8" class="street" target="_blank">
           <span>18&nbsp;South Park, London</span></a>
       </div>
       <figure class="pets">
@@ -336,6 +370,9 @@
       </figure>
     </div>
   </footer>
+  <script src="../main/burgermenu.js"></script>
+  <script src="../main/slider.js"></script>
+  <script src="../main/modal.js"></script>
 </body>
 
 </html>
