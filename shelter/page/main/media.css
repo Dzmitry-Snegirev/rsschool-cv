@@ -88,10 +88,12 @@
 
   .slide-blocks.leftPosition {
     transform: translateX(580px);
+    transition: 0.3s;
   }
 
   .slide-blocks.rigthPosition {
     transform: translateX(-580px);
+    transition: 0.3s;
   }
 
 }
@@ -125,10 +127,12 @@
 
   .slide-blocks.leftPosition {
     transform: translateX(270px);
+    transition: 0.3s;
   }
 
   .slide-blocks.rigthPosition {
     transform: translateX(-270px);
+    transition: 0.3s;
   }
 }
 
