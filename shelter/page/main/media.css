@@ -129,12 +129,12 @@
 
   .slide-blocks.leftPosition {
     transform: translateX(270px);
-    transition: 0.3s;
+    transition: 0.8s;
   }
 
   .slide-blocks.rigthPosition {
     transform: translateX(-270px);
-    transition: 0.3s;
+    transition: 0.8s;
   }
 }
 
