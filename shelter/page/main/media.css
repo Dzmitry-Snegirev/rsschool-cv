@@ -190,7 +190,6 @@
 
 @media (max-width: 767px) {
 
-
   /*burger menu*/
   .header__menu-burger {
     position: relative;
@@ -202,13 +201,13 @@
     transition-duration: 0.3s;
   }
 
+
   .header__menu-burger.active {
     transform-origin: center center;
     transform: rotate(90deg);
     border: none;
     cursor: pointer;
   }
-
 
   .nav__list {
     padding: 87px 0 10px;
@@ -224,10 +223,8 @@
     align-items: center;
     background: #292929;
     transition-duration: 0.3s;
-
-  .header__menu-burger {
-    display: block;
   }
+
 
   .nav {
     display: none;
@@ -276,76 +273,74 @@
   }
 }
 
-@media (max-width: 730px) {
+.donation {
+  align-content: center;
+  flex-wrap: wrap;
+}
 
-  .donation {
-    align-content: center;
-    flex-wrap: wrap;
-  }
+.about__content {
+  width: 300px;
+}
 
-  .about__content {
-    width: 300px;
-  }
+.donation__content {
+  margin-left: 0;
+  width: 300px;
+}
 
-  .donation__content {
-    margin-left: 0;
-    width: 300px;
-  }
+.button-primery {
+  margin-left: 0;
+}
 
-  .button-primery {
-    margin-left: 0;
-  }
+.donation-card {
+  width: 300px;
+}
 
-  .donation-card {
-    width: 300px;
-  }
+.donation__title {
+  font-size: 25px;
+  line-height: 32.5px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  .donation__title {
-    font-size: 25px;
-    line-height: 32.5px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.donation-subtitle {
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.001em;
+  padding-left: 13px;
+}
 
-  .donation-subtitle {
-    font-size: 15px;
-    line-height: 24px;
-    text-align: left;
-    letter-spacing: 0.001em;
-    padding-left: 13px;
-  }
+.donation {
+  margin: 83px 14px 0 13px;
+}
 
-  .donation {
-    margin: 83px 14px 0 13px;
-  }
+.card-icon::before {
+  width: 30px;
+  height: 23px;
+}
 
-  .card-icon::before {
-    width: 30px;
-    height: 23px;
-  }
+.card-icon {
+  font-size: 15px;
+  line-height: 16.5px;
+  padding-top: 3px;
+}
 
-  .card-icon {
-    font-size: 15px;
-    line-height: 16.5px;
-    padding-top: 3px;
-  }
+.donation-card {
+  width: 281px;
+  margin-left: 9px;
+  padding: 10px 15px 10px 16px;
+}
 
-  .donation-card {
-    width: 281px;
-    margin-left: 9px;
-    padding: 10px 15px 10px 16px;
-  }
+.donation-text {
+  text-align: justify;
+  margin: 0 10px;
+}
 
-  .donation-text {
-    text-align: justify;
-    margin: 0 10px;
-  }
-
-  .donation__pets {
-    padding-top: 12px;
-    padding-left: 20px;
-  }
+.donation__pets {
+  padding-top: 12px;
+  padding-left: 20px;
+}
 
 }
 
